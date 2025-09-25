@@ -1,0 +1,1978 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Single Page Website</title>
+
+      <!-- Critical Performance Optimizations -->
+        <link rel="preconnect" href="https://cdn.wppool.dev">
+        <link rel="preconnect" href="https://imagedelivery.net">
+        <link rel="dns-prefetch" href="https://wppool.dev">
+        <link rel="dns-prefetch" href="https://wordpress.org">
+        <link rel="dns-prefetch" href="https://go.wppool.dev">
+        
+        <!-- Preload critical resources -->
+        <link rel="preload" href="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/40388298-7360-4076-10aa-576d54d0c400/public" as="image" fetchpriority="high">
+        <link rel="preload" href="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/c2c06225-fb6c-4b21-9dc5-f22c43a98c00/public" as="image" fetchpriority="high">
+        <link rel="preload" href="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/a47376d1-0d7c-484e-8289-633274ab3000/public" as="image" fetchpriority="high">
+        
+        <!-- Critical CSS inlined -->
+        <style>
+            *,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}h1,h2,h3,h4,h5,h6{font-family:SF Pro Display,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol}html,:host{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol}html{scroll-behavior:smooth}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.invisible{visibility:hidden}.\!fixed{position:fixed!important}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-top-20{top:-5rem}.-top-36{top:-9rem}.bottom-\[2px\]{bottom:2px}.left-28{left:7rem}.left-6{left:1.5rem}.right-0{right:0}.right-3{right:.75rem}.top-0{top:0}.z-\[999\]{z-index:999}.col-span-3{grid-column:span 3 / span 3}.m-0{margin:0}.mx-2{margin-left:.5rem;margin-right:.5rem}.mx-auto{margin-left:auto;margin-right:auto}.-ml-1{margin-left:-.25rem}.-mr-24{margin-right:-6rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:.5rem}.mb-24{margin-bottom:6rem}.mb-3{margin-bottom:.75rem}.mb-8{margin-bottom:2rem}.mb-9{margin-bottom:2.25rem}.ml-1{margin-left:.25rem}.ml-2{margin-left:.5rem}.ml-auto{margin-left:auto}.mr-1{margin-right:.25rem}.mr-12{margin-right:3rem}.mr-2{margin-right:.5rem}.mr-6{margin-right:1.5rem}.mt-1{margin-top:.25rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-3{margin-top:.75rem}.block{display:block}.inline-block{display:inline-block}.inline{display:inline}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-1{height:.25rem}.h-11{height:2.75rem}.h-2{height:.5rem}.h-3{height:.75rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-9{height:2.25rem}.h-\[14px\]{height:14px}.h-\[60px\]{height:60px}.h-\[9999px\]{height:9999px}.h-auto{height:auto}.h-screen{height:100vh}.w-11{width:2.75rem}.w-16{width:4rem}.w-2{width:.5rem}.w-24{width:6rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-\[15px\]{width:15px}.w-\[320px\]{width:320px}.w-\[84px\]{width:84px}.w-auto{width:auto}.w-full{width:100%}.min-w-9{min-width:2.25rem}.max-w-44{max-width:11rem}.max-w-screen-xl{max-width:1280px}.-translate-y-1{--tw-translate-y: -.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-5{--tw-translate-y: -1.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-0{--tw-translate-x: 0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-1{--tw-translate-x: .25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-full{--tw-translate-x: 100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-0{--tw-translate-y: 0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-rotate-180{--tw-rotate: -180deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-flow-row{grid-auto-flow:row}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-\[26px_auto\]{grid-template-columns:26px auto}.grid-cols-\[34px_auto\]{grid-template-columns:34px auto}.grid-cols-\[36px_auto\]{grid-template-columns:36px auto}.grid-cols-\[40px_auto\]{grid-template-columns:40px auto}.grid-cols-\[42px_auto\]{grid-template-columns:42px auto}.grid-rows-\[0fr\]{grid-template-rows:0fr}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.overflow-ellipsis{text-overflow:ellipsis}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-sm{border-radius:.125rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-0{border-width:0px}.border-b{border-bottom-width:1px}.border-\[\#47bcff\]{--tw-border-opacity: 1;border-color:rgb(71 188 255 / var(--tw-border-opacity, 1))}.border-\[\#EE5913\]{--tw-border-opacity: 1;border-color:rgb(238 89 19 / var(--tw-border-opacity, 1))}.border-cyan-200{--tw-border-opacity: 1;border-color:rgb(165 243 252 / var(--tw-border-opacity, 1))}.border-b-gray-500{--tw-border-opacity: 1;border-bottom-color:rgb(107 114 128 / var(--tw-border-opacity, 1))}.bg-\[\#0071E3\]{--tw-bg-opacity: 1;background-color:rgb(0 113 227 / var(--tw-bg-opacity, 1))}.bg-\[\#e0ffe0\]{--tw-bg-opacity: 1;background-color:rgb(224 255 224 / var(--tw-bg-opacity, 1))}.bg-\[\#ffe7d6\]{--tw-bg-opacity: 1;background-color:rgb(255 231 214 / var(--tw-bg-opacity, 1))}.bg-black{--tw-bg-opacity: 1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-cyan-200{--tw-bg-opacity: 1;background-color:rgb(165 243 252 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity: 1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-green-400{--tw-bg-opacity: 1;background-color:rgb(74 222 128 / var(--tw-bg-opacity, 1))}.bg-orange-600{--tw-bg-opacity: 1;background-color:rgb(234 88 12 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity: 1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-cover{background-size:cover}.bg-center{background-position:center}.bg-no-repeat{background-repeat:no-repeat}.p-2{padding:.5rem}.p-3{padding:.75rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-\[7px\]{padding-left:7px;padding-right:7px}.py-0{padding-top:0;padding-bottom:0}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-\[4px\]{padding-top:4px;padding-bottom:4px}.pb-24{padding-bottom:6rem}.pb-28{padding-bottom:7rem}.pl-2{padding-left:.5rem}.pl-4{padding-left:1rem}.pr-2{padding-right:.5rem}.pr-2\.5{padding-right:.625rem}.pt-40{padding-top:10rem}.pt-44{padding-top:11rem}.pt-5{padding-top:1.25rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[9px\]{font-size:9px}.text-\[clamp\(1\.5rem\,2vw\,2\.2rem\)\]{font-size:clamp(1.5rem,2vw,2.2rem)}.text-\[clamp\(3rem\,10vw\,5\.6rem\)\]{font-size:clamp(3rem,10vw,5.6rem)}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.capitalize{text-transform:capitalize}.leading-4{line-height:1rem}.leading-5{line-height:1.25rem}.leading-\[18px\]{line-height:18px}.leading-none{line-height:1}.leading-normal{line-height:1.5}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.text-\[\#017d01\]{--tw-text-opacity: 1;color:rgb(1 125 1 / var(--tw-text-opacity, 1))}.text-\[\#47bcff\]{--tw-text-opacity: 1;color:rgb(71 188 255 / var(--tw-text-opacity, 1))}.text-\[\#EE5913\]{--tw-text-opacity: 1;color:rgb(238 89 19 / var(--tw-text-opacity, 1))}.text-\[\#ce0404\]{--tw-text-opacity: 1;color:rgb(206 4 4 / var(--tw-text-opacity, 1))}.text-black{--tw-text-opacity: 1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-cyan-200{--tw-text-opacity: 1;color:rgb(165 243 252 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity: 1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-orange-600{--tw-text-opacity: 1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity: 1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-stone-300{--tw-text-opacity: 1;color:rgb(214 211 209 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-60{opacity:.6}.shadow-none{--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.blur{--tw-blur: blur(8px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.ease-in{transition-timing-function:cubic-bezier(.4,0,1,1)}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}@font-face{font-family:SF Pro Display;src:url(../../assets/fonts/SFProDisplay-Semibold.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}.header-menu:after{transition:all .5s ease!important;-webkit-backdrop-filter:saturate(178%) blur(20px);backdrop-filter:saturate(178%) blur(20px)}.header-menu.sticky:after{opacity:1}.main_menu ul li:hover>.sub-menu{opacity:1;visibility:visible;transform:translateY(0)!important}.btn-theme-tab.active{color:#08cf68;border-color:#08cf68;background:linear-gradient(290deg,#08cf6833 18.17%,#e2ffbc33)}.btn-theme-tab.active:before{border-color:#08cf68}.after\:absolute:after{content:var(--tw-content);position:absolute}.after\:left-0:after{content:var(--tw-content);left:0}.after\:right-\[0\]:after{content:var(--tw-content);right:0}.after\:top-0:after{content:var(--tw-content);top:0}.after\:top-1\/2:after{content:var(--tw-content);top:50%}.after\:z-\[-1\]:after{content:var(--tw-content);z-index:-1}.after\:h-8:after{content:var(--tw-content);height:2rem}.after\:h-full:after{content:var(--tw-content);height:100%}.after\:w-\[1px\]:after{content:var(--tw-content);width:1px}.after\:w-full:after{content:var(--tw-content);width:100%}.after\:-translate-y-1\/2:after{content:var(--tw-content);--tw-translate-y: -50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.after\:bg-\[\#20202099\]:after{content:var(--tw-content);background-color:#20202099}.after\:bg-white\/60:after{content:var(--tw-content);background-color:#fff9}.after\:opacity-100:after{content:var(--tw-content);opacity:1}.after\:transition-all:after{content:var(--tw-content);transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.after\:content-\[\'\'\]:after{--tw-content: "";content:var(--tw-content)}.after\:content-\[\'\*\'\]:after{--tw-content: "*";content:var(--tw-content)}.hover\:bg-\[\#47bcff\]:hover{--tw-bg-opacity: 1;background-color:rgb(71 188 255 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-50:hover{--tw-bg-opacity: 1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.hover\:bg-orange-500:hover{--tw-bg-opacity: 1;background-color:rgb(249 115 22 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-900:hover{--tw-bg-opacity: 1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.hover\:text-sky-500:hover{--tw-text-opacity: 1;color:rgb(14 165 233 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:no-underline:hover{text-decoration-line:none}.hover\:opacity-100:hover{opacity:1}.focus\:border-0:focus{border-width:0px}.focus\:outline-0:focus{outline-width:0px}.group:hover .group-hover\:translate-x-1{--tw-translate-x: .25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:-rotate-180{--tw-rotate: -180deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:fill-white{fill:#fff}.group:hover .group-hover\:stroke-orange-600{stroke:#ea580c}.group:hover .group-hover\:text-orange-600{--tw-text-opacity: 1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.peer:checked~.peer-checked\:visible{visibility:visible}.peer:checked~.peer-checked\:z-50{z-index:50}.peer:checked~.peer-checked\:h-0{height:0px}.peer:checked~.peer-checked\:translate-x-0{--tw-translate-x: 0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.peer:checked~.peer-checked\:grid-rows-\[1fr\]{grid-template-rows:1fr}.peer:checked~.peer-checked\:bg-slate-900{--tw-bg-opacity: 1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.peer:checked~.peer-checked\:p-0{padding:0}.peer:checked~.peer-checked\:opacity-0{opacity:0}.peer:checked~.peer-checked\:opacity-100{opacity:1}@media (min-width: 640px){.sm\:right-6{right:1.5rem}.sm\:col-auto{grid-column:auto}.sm\:mx-auto{margin-left:auto;margin-right:auto}.sm\:mr-0{margin-right:0}.sm\:mr-7{margin-right:1.75rem}.sm\:mt-12{margin-top:3rem}.sm\:mt-16{margin-top:4rem}.sm\:block{display:block}.sm\:flex{display:flex}.sm\:grid{display:grid}.sm\:hidden{display:none}.sm\:w-\[380px\]{width:380px}.sm\:grid-flow-col{grid-auto-flow:column}.sm\:grid-cols-none{grid-template-columns:none}.sm\:gap-8{gap:2rem}.sm\:pb-32{padding-bottom:8rem}.sm\:pr-8{padding-right:2rem}.sm\:pt-52{padding-top:13rem}.sm\:text-left{text-align:left}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:leading-5{line-height:1.25rem}}@media (min-width: 768px){.md\:w-full{width:100%}.md\:px-8{padding-left:2rem;padding-right:2rem}.md\:py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:visible{visibility:visible}.lg\:invisible{visibility:hidden}.lg\:absolute{position:absolute}.lg\:relative{position:relative}.lg\:-left-4{left:-1rem}.lg\:left-\[-530px\]{left:-530px}.lg\:top-10{top:2.5rem}.lg\:top-\[45px\]{top:45px}.lg\:mx-0{margin-left:0;margin-right:0}.lg\:mb-0{margin-bottom:0}.lg\:mb-2{margin-bottom:.5rem}.lg\:mb-3{margin-bottom:.75rem}.lg\:ml-0{margin-left:0}.lg\:flex{display:flex}.lg\:inline-flex{display:inline-flex}.lg\:grid{display:grid}.lg\:hidden{display:none}.lg\:h-auto{height:auto}.lg\:w-1\/2{width:50%}.lg\:w-\[1000px\]{width:1000px}.lg\:w-\[250px\]{width:250px}.lg\:w-auto{width:auto}.lg\:-translate-y-5{--tw-translate-y: -1.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.lg\:translate-x-0{--tw-translate-x: 0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:items-center{align-items:center}.lg\:justify-start{justify-content:flex-start}.lg\:gap-0{gap:0px}.lg\:overflow-visible{overflow:visible}.lg\:overflow-y-visible{overflow-y:visible}.lg\:rounded-xl{border-radius:.75rem}.lg\:border-0{border-width:0px}.lg\:bg-transparent{background-color:transparent}.lg\:bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.lg\:bg-\[center_60px\]{background-position:center 60px}.lg\:p-0{padding:0}.lg\:p-3\.5{padding:.875rem}.lg\:p-4{padding:1rem}.lg\:p-8{padding:2rem}.lg\:px-3{padding-left:.75rem;padding-right:.75rem}.lg\:px-3\.5{padding-left:.875rem;padding-right:.875rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:pr-8{padding-right:2rem}.lg\:pt-5{padding-top:1.25rem}.lg\:pt-60{padding-top:15rem}.lg\:text-left{text-align:left}.lg\:text-base{font-size:1rem;line-height:1.5rem}.lg\:text-sm{font-size:.875rem;line-height:1.25rem}.lg\:tracking-\[-0\.1px\]{letter-spacing:-.1px}.lg\:text-black\/60{color:#0009}.lg\:text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.lg\:text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.lg\:opacity-100{opacity:1}.lg\:shadow-\[0_0_30px_0_rgba\(0\,0\,0\,0\.16\)\]{--tw-shadow: 0 0 30px 0 rgba(0,0,0,.16);--tw-shadow-colored: 0 0 30px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.lg\:shadow-\[0px_4px_8px_0px_\#00000033\]{--tw-shadow: 0px 4px 8px 0px #00000033;--tw-shadow-colored: 0px 4px 8px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.lg\:after\:absolute:after{content:var(--tw-content);position:absolute}.lg\:after\:left-\[560px\]:after{content:var(--tw-content);left:560px}.lg\:after\:top-\[-8px\]:after{content:var(--tw-content);top:-8px}.lg\:after\:h-4:after{content:var(--tw-content);height:1rem}.lg\:after\:w-4:after{content:var(--tw-content);width:1rem}.lg\:after\:rotate-45:after{content:var(--tw-content);--tw-rotate: 45deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.lg\:after\:rounded-\[2px\]:after{content:var(--tw-content);border-radius:2px}.lg\:after\:bg-white:after{content:var(--tw-content);--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.lg\:after\:content-\[\'\'\]:after{--tw-content: "";content:var(--tw-content)}.lg\:hover\:bg-blue-50:hover{--tw-bg-opacity: 1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.group:hover .lg\:group-hover\:visible{visibility:visible}.group:hover .lg\:group-hover\:translate-y-0{--tw-translate-y: 0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .lg\:group-hover\:opacity-100{opacity:1}}@media (min-width: 1280px){.xl\:w-auto{width:auto}.xl\:max-w-full{max-width:100%}.xl\:gap-12{gap:3rem}.xl\:px-14{padding-left:3.5rem;padding-right:3.5rem}.xl\:px-4{padding-left:1rem;padding-right:1rem}}
+        </style>
+        <link rel="preload" href="./css/darkmode.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+        <!-- Non-critical CSS loaded asynchronously -->
+        <noscript><link rel="stylesheet" href="./css/darkmode.min.css"></noscript>
+    </head>
+    <body class="bg-black text-gray-900 antialiased">
+        <nav class="header-menu !fixed z-[999] w-full transition-all duration-300 ease-in-out after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:bg-[#20202099] after:opacity-100 after:transition-all after:content-['']">
+            <div class="topbar relative">
+                <input
+                    id="close-topbar"
+                    type="checkbox"
+                    class="peer sr-only"
+                    aria-labelledby="close-topbar-label"
+                />
+                <div class="peer-checked:h-0 peer-checked:p-0 peer-checked:opacity-0 transition-all duration-200 ease-in-out px-4 py-1 sm:pr-8 h-[60px] text-sm sm:text-base text-white leading-tight sm:leading-5 text-center bg-[#0071E3] flex items-center justify-center ">
+            
+                    <span class="mr-6 text-center sm:mr-7">
+                        🔥 Trending Now: Introduced Liquid Glass Switch in WP Dark Mode!
+                        <a
+                            class="group ml-1 underline transition-all hover:no-underline"
+                            href="https://wppool.dev/wp-dark-mode-v5-2-13-introducing-the-liquid-glass-dark-mode-switch-inspired-by-ios-26/" 
+                        >
+                            <strong> What Makes It Special? </strong>
+                            <span class="inline-block transition-all group-hover:translate-x-1">
+                                <svg
+                                    class="inline h-3 w-auto"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 30 18"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M20.1183 0.804401C20.2457 0.676156 20.3825 0.583177 20.5289 0.525467C20.6754 0.467757 20.8218 0.438902 20.9682 0.438902C21.1146 0.438902 21.2706 0.470963 21.4361 0.535086C21.5762 0.586384 21.7035 0.676156 21.8181 0.804401L28.9799 8.01818C29.0818 8.10795 29.1645 8.23619 29.2282 8.40291C29.2918 8.53116 29.3237 8.68505 29.3237 8.86459C29.3237 9.04414 29.2918 9.19803 29.2282 9.32627C29.1645 9.48017 29.0818 9.60841 28.9799 9.71101L21.8181 16.9248C21.5762 17.1685 21.2929 17.2903 20.9682 17.2903C20.6435 17.2903 20.3634 17.1717 20.1279 16.9344C19.8923 16.6972 19.7746 16.4118 19.7746 16.0784C19.7746 15.7449 19.8892 15.4628 20.1183 15.232L26.4398 8.86459L20.1183 2.49723C20.0165 2.39464 19.9337 2.26319 19.8701 2.10288C19.8064 1.94257 19.7746 1.79189 19.7746 1.65082C19.7746 1.50975 19.8064 1.35585 19.8701 1.18913C19.9337 1.02242 20.0165 0.894173 20.1183 0.804401ZM0.676331 8.86459C0.676331 8.53116 0.794103 8.24581 1.02965 8.00856C1.26519 7.77131 1.54848 7.65268 1.87952 7.65268L26.9364 7.65268C27.2802 7.65268 27.5603 7.77451 27.7767 8.01818C28.0186 8.23619 28.1396 8.51192 28.1396 8.84536C28.1396 9.17879 28.0186 9.46734 27.7767 9.71101C27.573 9.94185 27.2929 10.0573 26.9364 10.0573L1.87952 10.0573C1.53575 10.0573 1.24928 9.93544 1.0201 9.69177C0.79092 9.44811 0.676331 9.17238 0.676331 8.86459Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Close button with aria-label for accessibility -->
+                    <label
+                        for="close-topbar"
+                        class="z-1 absolute right-3 flex h-5 w-5 cursor-pointer items-center justify-center sm:right-6"
+                        style="top: calc(50% - 10px)"
+                        id="close-topbar-label"
+                        aria-label="Close topbar"
+                    >
+                        <svg
+                            class="h-[14px] w-auto"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                        >
+                            <path
+                                d="M1 13L13 1M1 1L13 13"
+                                stroke="#fff"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+
+            <div
+                class="mx-auto flex max-w-screen-xl items-center justify-between lg:gap-0 gap-4 px-4 py-2.5"
+            >
+                <div class="flex items-center">
+                    <a
+                        class="relative mr-2 pr-2.5 opacity-60 transition-all after:absolute after:right-[0] after:top-1/2 after:h-8 after:w-[1px] after:-translate-y-1/2 after:bg-white/60 after:content-['*'] hover:opacity-100"
+                        href="https://wppool.dev"
+                        aria-label="Visit WP Pool Website"
+                    >
+                        <img 
+                            src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/ec2f3cca-c555-4e09-05c6-d44e9f25f100/public" 
+                            alt="WPPOOL Logo For FlexFable Header"
+                            width="61" 
+                            height="32" 
+                            loading="eager" 
+                            decoding="sync"  
+                            style="aspect-ratio: auto; object-fit: contain;">
+                    </a>
+
+                    <a class="" href="https://wppool.dev/flextable/" rel="home" aria-current="page" aria-label="FlexTable Page">
+                        <img 
+                            src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/78719954-e1c3-4993-fbbc-7e75cf115f00/public" 
+                            class="max-w-44 xl:max-w-full"
+                            alt="WP Dark Mode"
+                            width="219" 
+                            height="44" 
+                            loading="eager" 
+                            decoding="sync"  
+                            style="aspect-ratio: 219/44; object-fit: contain;">
+                    </a>
+                </div>
+                <input id="toogle-menu" type="checkbox" class="peer sr-only" aria-labelledby="toogle-menu-label" />
+                <div
+                    class="invisible fixed right-0 top-0 h-[9999px] w-[320px] translate-x-full bg-slate-900 opacity-0 transition-all peer-checked:visible peer-checked:z-50 peer-checked:translate-x-0 peer-checked:opacity-100 sm:w-[380px] lg:visible lg:relative lg:h-auto lg:w-auto lg:translate-x-0 lg:bg-transparent lg:p-0 lg:opacity-100"
+                ></div>
+                <div
+                    class="main_menu invisible fixed right-0 top-0 h-screen w-[320px] translate-x-full overflow-y-auto bg-slate-900 px-6 py-12 opacity-0 transition-all peer-checked:visible peer-checked:z-50 peer-checked:translate-x-0 peer-checked:opacity-100 sm:w-[380px] lg:visible lg:relative lg:h-auto lg:w-auto lg:translate-x-0 lg:overflow-y-visible lg:bg-transparent lg:p-0 lg:opacity-100"
+                >
+                    <div class="mb-8 flex justify-between lg:hidden">
+                        <div class="mobile-logo">
+                            <img
+                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/e4d7d7e7-3d47-45d8-6e0d-870f1c857f00/public"
+                                alt="WPPOOL Moble Logo"
+                                loading="lazy"
+                                decoding="async"
+                                style="aspect-ratio: 120/32; object-fit: contain;"
+                            />
+                        </div>
+                        <label
+                            for="toogle-menu"
+                            class="ml-auto flex h-5 w-5 cursor-pointer items-center justify-center"
+                            id="toogle-menu-label"
+                            aria-label="Close Mobile Menu"
+                            style="top: calc(50% - 10px)"
+                        >
+                            <svg
+                                class="h-4 w-auto"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 14 14"
+                                fill="none"
+                            >
+                                <path
+                                    d="M1 13L13 1M1 1L13 13"
+                                    stroke="#fff"
+                                    stroke-width="1.7"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </label>
+                    </div>
+                    <ul
+                        class="navbar-nav block items-center lg:flex"
+                        itemscope
+                        itemtype="http://www.schema.org/SiteNavigationElement"
+                    >
+                        <li
+                            id="menu-item-4795"
+                            class="group relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                        >
+                            <a
+                                itemprop="url"
+                                href="#features"
+                                class="tex-sm flex cursor-pointer items-center gap-1 py-2 pl-2 font-normal leading-[18px] text-orange-600 transition-all group-hover:text-orange-600 lg:px-3 xl:px-4"
+                                ><span itemprop="name">Features</span></a
+                            >
+                        </li>
+                        <li
+                            id="menu-item-4795"
+                            class="group relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                        >
+                            <a
+                                itemprop="url"
+                                href="https://wppool.dev/wp-dark-mode-pricing/"
+                                class="tex-sm flex cursor-pointer items-center gap-1 py-2 pl-2 font-normal leading-[18px] text-white transition-all group-hover:text-orange-600 lg:px-3 xl:px-4"
+                                ><span itemprop="name">Pricing</span></a
+                            >
+                        </li>
+                        <li
+                            id="menu-item-4790"
+                            class="group relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                        >
+                            <input type="checkbox" id="feature-dropdown" class="peer sr-only" />
+                            <label
+                                for="feature-dropdown"
+                                class="text-sm flex cursor-pointer items-center gap-1.5 py-2 pl-2 pr-2 font-normal text-white transition-all group-hover:text-orange-600 peer-checked:bg-slate-900 lg:px-3 xl:px-4"
+                            >
+                                <span itemprop="name">Compatibility</span>
+                                <svg
+                                    class="ml-auto mt-1 h-2 w-auto transition-all group-hover:-rotate-180"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 18 10"
+                                    fill="none"
+                                >
+                                    <path
+                                        class="transition-all group-hover:stroke-orange-600"
+                                        d="M16.5 1.25L9 8.75L1.5 1.25"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </label>
+                            <div
+                                class="sub-menu grid grid-rows-[0fr] overflow-hidden pl-4 opacity-0 transition-all duration-200 ease-in-out peer-checked:grid-rows-[1fr] peer-checked:opacity-100 lg:invisible lg:absolute lg:-left-4 lg:top-10 lg:w-[250px] lg:-translate-y-5 lg:overflow-visible lg:rounded-xl lg:bg-white lg:p-3.5 lg:pt-5 lg:shadow-[0px_4px_8px_0px_#00000033] lg:group-hover:visible lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+                            >
+                                <ul class="nav-list overflow-hidden lg:overflow-visible">
+                                    <li
+                                        id="menu-item-31235"
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="https://wppool.dev/dark-mode-compatibility/"
+                                            class="block px-2 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:px-3.5 lg:text-gray-600"
+                                            ><span itemprop="name">Compatibility</span></a
+                                        >
+                                    </li>
+                                    <li
+                                        id="menu-item-31236"
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="#themes"
+                                            class="block px-2 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:px-3.5 lg:text-gray-600"
+                                            ><span itemprop="name">Themes</span></a
+                                        >
+                                    </li>
+                                    <li
+                                        id="menu-item-31237"
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="#page_builder"
+                                            class="block px-2 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:px-3.5 lg:text-gray-600"
+                                            ><span itemprop="name">Plugins</span></a
+                                        >
+                                    </li>
+                                    <li
+                                        id="menu-item-31238"
+                                        class="relative block w-full py-2 lg:w-auto"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="https://wppool.dev/compatibility-apply-form/"
+                                            class="block px-2 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:px-3.5 lg:text-gray-600"
+                                            ><span itemprop="name">Compatibility Apply Form</span></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li
+                            id="menu-item-4792"
+                            class="products-menu group relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                        >
+                            <input type="checkbox" id="mega-menu-dropdown" class="peer sr-only" />
+                            <label
+                                for="mega-menu-dropdown"
+                                class="tex-sm flex cursor-pointer items-center gap-1.5 py-2 pl-2 pr-2 font-normal leading-[18px] text-white transition-all group-hover:text-orange-600 peer-checked:bg-slate-900 lg:px-3 xl:px-4"
+                            >
+                                <span itemprop="name">Products</span>
+                                <svg
+                                    class="ml-auto mt-1 h-2 w-auto transition-all group-hover:-rotate-180"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 18 10"
+                                    fill="none"
+                                >
+                                    <path
+                                        class="transition-all group-hover:stroke-orange-600"
+                                        d="M16.5 1.25L9 8.75L1.5 1.25"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </label>
+                            <div
+                                class="w-mega-menu grid grid-rows-[0fr] overflow-hidden opacity-0 transition-all duration-200 ease-in-out peer-checked:grid-rows-[1fr] peer-checked:opacity-100 lg:invisible lg:absolute lg:left-[-530px] lg:top-[45px] lg:w-[1000px] lg:-translate-y-5 lg:overflow-visible lg:rounded-xl lg:bg-white lg:shadow-[0_0_30px_0_rgba(0,0,0,0.16)] lg:after:absolute lg:after:left-[560px] lg:after:top-[-8px] lg:after:h-4 lg:after:w-4 lg:after:rotate-45 lg:after:rounded-[2px] lg:after:bg-white lg:after:content-[''] lg:group-hover:visible lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+                            >
+                                <ul
+                                    class="flex flex-col overflow-hidden pl-4 lg:grid lg:grid-cols-3 lg:overflow-visible lg:p-8"
+                                >
+                                    <!-- WP Dark Mode -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://wppool.dev/wp-dark-mode"
+                                            class="grid grid-cols-[42px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/60f4953f-b7c7-41d3-31fc-b9a9caf6f900/public"
+                                                alt="WP Dark Mode"
+                                                width="42"
+                                                height="42"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h3
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    WP Dark Mode
+                                                </h3>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    A stunning WordPress Dark Mode experience
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- FlexTable -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://wppool.dev/flextable"
+                                            class="grid grid-cols-[42px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/677e8947-f0cf-4071-1a41-9c17e6777f00/public"
+                                                alt="FlexTable"
+                                                 width="42"
+                                                height="42"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h3
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    FlexTable
+                                                    <span
+                                                        class="ml-1 hidden items-center justify-center rounded bg-[#ffe7d6] px-1 py-0.5 text-xs leading-none uppercase text-[#ce0404] lg:inline-flex"
+                                                    >
+                                                        hot
+                                                        <img
+                                                            src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/3d9b3953-f8ad-4dca-0556-5c221276e800/public"
+                                                            alt="Hot badge icon for Flex Table" 
+                                                            width="10" 
+                                                            height="10"
+                                                            loading="lazy" 
+                                                            decoding="async"
+                                                            style="aspect-ratio: 1/1; object-fit: contain;"
+                                                        />
+                                                    </span>
+                                                </h3>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Automatically sync Google Spreadsheets with WP
+                                                    tables
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- FormyChat -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://wppool.dev/formychat"
+                                            class="grid grid-cols-[36px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/6030c7bf-e6f8-432b-515b-21980a7b9a00/public"
+                                                alt="FormyChat"
+                                                 width="36"
+                                                height="36"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h3
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    FormyChat
+                                                </h3>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Send contact form leads to WhatsApp
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- FlexStock -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://wppool.dev/flexstock"
+                                            class="grid grid-cols-[42px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/32206971-7294-4b8d-5412-bff496793a00/public"
+                                                alt="Stock Sync"
+                                                width="42"
+                                                height="42"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h3
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    FlexStock
+                                                    <span
+                                                        class="ml-1 hidden lg:inline-flex items-center justify-center rounded bg-[#ffe7d6] px-1 py-0.5 text-xs leading-none uppercase text-[#ce0404]"
+                                                    >
+                                                        hot
+                                                        <img
+                                                            src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/3d9b3953-f8ad-4dca-0556-5c221276e800/public"
+                                                            alt="Hot badge icon" 
+                                                            width="10" 
+                                                            height="10"
+                                                            loading="lazy" 
+                                                            decoding="async"
+                                                            style="aspect-ratio: 1/1; object-fit: contain;"
+                                                        />
+                                                    </span>
+                                                </h3>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Sync WooCommerce stock with Google Sheet and
+                                                    manage easily
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- FlexOrder -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://wcordersync.com/"
+                                            class="grid grid-cols-[42px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/d3be24b5-a7c0-4f61-15cb-c89767b90d00/public"
+                                                alt="Order Sync"
+                                                width="42"
+                                                height="42"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h3
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    FlexOrder
+                                                    <span
+                                                        class="ml-1 hidden lg:inline-flex items-center justify-center rounded bg-[#e0ffe0] px-1 py-[4px] text-xs leading-none uppercase text-[#017d01]"
+                                                        >new ⚡</span
+                                                    >
+                                                </h3>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Manage WooCommerce orders from Google Sheets
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Easy Video Reviews -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://wppool.dev/easy-video-reviews"
+                                            class="grid grid-cols-[26px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/227afe74-3f30-4902-8fd1-6cc7cc03c800/public"
+                                                alt="Easy Video Reviews"
+                                                width="42"
+                                                height="42"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h3
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    Easy Video Reviews
+                                                </h3>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Get powerful video testimonials with ease and
+                                                    boost sales
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- EchoRewards -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://echorewards.pro/"
+                                            class="grid grid-cols-[34px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/118c89cb-ee2c-4372-9d17-65ca53bcbe00/public"
+                                                alt="EchoRewards"
+                                                width="36"
+                                                height="36"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h3
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    EchoRewards
+                                                    <span
+                                                        class="ml-1 hidden lg:inline-flex items-center justify-center rounded bg-[#e0ffe0] px-1 py-[4px] text-xs leading-none uppercase text-[#017d01]"
+                                                        >new ⚡</span
+                                                    >
+                                                </h3>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Referral Plugin for WooCommerce
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Jitsi Meet -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://wppool.dev/webinar-and-video-conference-with-jitsi-meet"
+                                            class="grid grid-cols-[40px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/95000efe-6b43-4910-c734-428dc4dd6400/public"
+                                                alt="Jitsi Meet"
+                                                width="42"
+                                                height="42"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h5
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    Jitsi Meet
+                                                </h5>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Webinar & video conferences within WordPress
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- FlexSync for Shopify -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://flexsync.app/"
+                                            class="grid grid-cols-[42px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/4d380a55-a109-4066-ee63-4bfa24cecc00/public"
+                                                alt="FlexSync for Shopify"
+                                                width="42"
+                                                height="42"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h5
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    FlexSync for Shopify
+                                                    <span
+                                                        class="ml-1 hidden lg:inline-flex items-center justify-center rounded bg-[#e0ffe0] px-1 py-[4px] text-xs leading-none uppercase text-[#017d01]"
+                                                        >new ⚡</span
+                                                    >
+                                                </h5>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Manage Shopify inventory from Google Sheets
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- ArchiveMaster -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://archivemaster.pro/"
+                                            class="grid grid-cols-[42px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/9e70fb5b-d4e7-4980-c995-ba98ec5c6900/public"
+                                                alt="ArchiveMaster"
+                                                width="42"
+                                                height="42"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h5
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    ArchiveMaster
+                                                    <span
+                                                        class="ml-1 hidden lg:inline-flex items-center justify-center rounded bg-[#e0ffe0] px-1 py-[4px] text-xs leading-none uppercase text-[#017d01]"
+                                                        >new ⚡</span
+                                                    >
+                                                </h5>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Speed up your WooCommerce store by archiving old
+                                                    orders.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- OMG Chat Widget -->
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            href="https://wppool.dev/chat-widgets-compatible-with-multivendor-marketplaces"
+                                            class="grid grid-cols-[42px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/224078b3-4015-4e60-a36a-df9e43c2de00/public"
+                                                alt="Chat Widgets"
+                                                width="42"
+                                                height="42"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h5
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    OMG Chat Widget
+                                                </h5>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Let customers contact via any social channel
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- Stock Notifier -->
+                                    <li>
+                                        <a
+                                            href="https://wppool.dev/stock-notifier-for-woocommerce"
+                                            class="grid grid-cols-[42px_auto] gap-4 rounded-lg p-2 transition-all duration-300 hover:bg-slate-900 lg:p-4 lg:hover:bg-blue-50"
+                                        >
+                                            <img
+                                                src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/1cb7ddf9-fb88-481e-00a3-5ad6e6583e00/public"
+                                                alt="Stock Notifier"
+                                                width="42"
+                                                height="42"
+                                                loading="lazy"
+                                                decoding="async"
+                                                style="aspect-ratio: 1/1; object-fit: contain;"
+                                            />
+                                            <div class="relative">
+                                                <h5
+                                                    class="mr-1 text-sm font-semibold leading-snug text-white lg:mb-2 lg:text-base lg:text-gray-900"
+                                                >
+                                                    Stock Notifier
+                                                </h5>
+                                                <p
+                                                    class="text-xs leading-tight text-gray-400 lg:text-sm lg:tracking-[-0.1px] lg:text-black/60"
+                                                >
+                                                    Notify customers about back-in-stock items
+                                                    instantly
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li
+                            id="menu-item-32112"
+                            class="help-menu group relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                        >
+                            <input type="checkbox" id="help-dropdown" class="peer sr-only" />
+                            <label
+                                for="help-dropdown"
+                                class="tex-sm flex cursor-pointer items-center gap-1.5 py-2 pl-2 pr-2 font-normal leading-[18px] text-white transition-all group-hover:text-orange-600 peer-checked:bg-slate-900 lg:px-3 xl:px-4"
+                            >
+                                <span itemprop="name">Help Center</span>
+                                <svg
+                                    class="ml-auto mt-1 h-2 w-auto transition-all group-hover:-rotate-180"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 18 10"
+                                    fill="none"
+                                >
+                                    <path
+                                        class="transition-all group-hover:stroke-orange-600"
+                                        d="M16.5 1.25L9 8.75L1.5 1.25"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </label>
+                            <div
+                                class="sub-menu grid grid-rows-[0fr] overflow-hidden pl-4 opacity-0 transition-all duration-200 ease-in-out peer-checked:grid-rows-[1fr] peer-checked:opacity-100 lg:invisible lg:absolute lg:-left-4 lg:top-10 lg:w-[250px] lg:-translate-y-5 lg:overflow-visible lg:rounded-xl lg:bg-white lg:p-3.5 lg:pt-5 lg:shadow-[0px_4px_8px_0px_#00000033] lg:group-hover:visible lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+                            >
+                                <ul class="nav-list overflow-hidden lg:overflow-visible">
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="https://wppool.dev/docs-category/how-to-use-sheets-to-wp-table/"
+                                            class="block px-3.5 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:text-gray-600"
+                                            ><span itemprop="name">Docs</span></a
+                                        >
+                                    </li>
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="https://wppool.dev/blog/"
+                                            class="block px-3.5 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:text-gray-600"
+                                            ><span itemprop="name"> Blog</span></a
+                                        >
+                                    </li>
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="https://www.youtube.com/channel/UCzMNIb1_6rjPP--6iWrZ7aw"
+                                            class="block px-3.5 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:text-gray-600"
+                                            ><span itemprop="name">Video Tutorials</span></a
+                                        >
+                                    </li>
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="https://wppool.dev/offers/"
+                                            class="block px-3.5 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:text-gray-600"
+                                            ><span itemprop="name"> Offer</span></a
+                                        >
+                                    </li>
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="#"
+                                            class="block px-3.5 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:text-gray-600"
+                                            ><span itemprop="name"> What&#8217;s New?</span></a
+                                        >
+                                    </li>
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="https://wppool.dev/flextable/#faq"
+                                            class="block px-3.5 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:text-gray-600"
+                                            aria-current="page"
+                                            ><span itemprop="name">FAQ</span></a
+                                        >
+                                    </li>
+                                    <li
+                                        class="relative block w-full border-b border-b-gray-500 py-2 lg:w-auto lg:border-0 lg:p-0"
+                                    >
+                                        <a
+                                            itemprop="url"
+                                            href="https://wppool.dev/dreamlab/"
+                                            class="block px-3.5 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:text-gray-600"
+                                            ><span itemprop="name">
+                                                DreamLab
+                                                <span
+                                                    class="relative bottom-[2px] rounded-full border border-[#EE5913] bg-white px-[7px] py-0.5 text-[9px] text-[#EE5913]"
+                                                    >Hire</span
+                                                ></span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            itemprop="url"
+                                            href="https://wppool.dev/contact"
+                                            class="block px-3.5 py-1 text-sm font-normal text-white transition-all hover:bg-blue-50 hover:text-sky-500 lg:mb-3 lg:text-gray-600"
+                                            ><span itemprop="name"> Support &#038; Contact</span></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="mt-3 flex flex-col gap-2.5 sm:hidden">
+                        <a
+                            target="_blank"
+                            href="https://lnk.wppool.dev/la2gPZG"
+                            class="group block w-full items-center gap-1 overflow-hidden overflow-ellipsis whitespace-nowrap rounded-full border border-[#47bcff] px-2.5 py-1.5 text-sm font-normal leading-[18px] text-[#47bcff] transition-all hover:bg-[#47bcff] hover:text-white sm:hidden"
+                        >
+                            <span class="icon-fb inline-block">
+                                <svg
+                                    class="inline"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="#fff"
+                                >
+                                    <path
+                                        class="transition-all group-hover:fill-white"
+                                        fill="#47bcff"
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669c1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                                    ></path>
+                                </svg>
+                            </span>
+                            <span class="">Join Community</span>
+                        </a>
+                        <a
+                            href="https://wppool.dev/wp-dark-mode-pricing/"
+                            class="relative flex w-full items-center justify-center rounded-full bg-orange-600 px-4 py-2.5 text-sm font-normal leading-[18px] text-white hover:bg-orange-500 xs:hidden"
+                            >Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ml-auto hidden gap-2.5 lg:ml-0 sm:flex">
+                    <a
+                        target="_blank"
+                        href="https://lnk.wppool.dev/la2gPZG"
+                        rel="noopener"
+                        class="group hidden w-[84px] items-center gap-1 overflow-hidden overflow-ellipsis whitespace-nowrap rounded-full border border-[#47bcff] px-2.5 py-1.5 text-sm font-normal leading-[18px] text-[#47bcff] transition-all hover:bg-[#47bcff] hover:text-white sm:block xl:w-auto"
+                    >
+                        <span class="icon-fb inline-block">
+                            <svg
+                                class="inline"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="#fff"
+                            >
+                                <path
+                                    class="transition-all group-hover:fill-white"
+                                    fill="#47bcff"
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669c1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <span class="">Join Community</span>
+                    </a>
+                    <a
+                        href="https://wppool.dev/wp-dark-mode-pricing/"
+                        class="relative flex items-center justify-center rounded-full bg-orange-600 px-4 py-1.5 text-sm font-normal leading-4 text-white hover:bg-orange-500"
+                        >Buy Now
+                    </a>
+                </div>
+                <label
+                    for="toogle-menu"
+                    class="navbar-toggler flex w-8 cursor-pointer flex-col items-center justify-between gap-1 lg:hidden"
+                    type="button"
+                >
+                    <span class="bar h-1 w-full rounded-sm bg-white"></span>
+                    <span class="bar h-1 w-full rounded-sm bg-white"></span>
+                    <span class="bar h-1 w-full rounded-sm bg-white"></span>
+                </label>
+            </div>
+        </nav>
+
+        <!-- Hero Section  -->
+        <section id="header" class="relative overflow-hidden bg-cover bg-center bg-no-repeat pt-44 pb-24 sm:pb-32 sm:pt-52 lg:pt-60 lg:bg-[center_60px]" style="background-image: url(https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/40388298-7360-4076-10aa-576d54d0c400/public);">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="flex flex-wrap items-start lg:items-center">
+                    <div class="w-full lg:w-1/2 md:w-full">
+                        <div class="mb-16 lg:mb-0 lg:pr-8">
+                            <h1 class="mb-8 text-[clamp(3rem,10vw,5.6rem)] font-bold leading-none text-white sm:mx-auto text-center lg:mx-0 lg:text-left">
+                                Dark mode. Go all in on lights out.
+                            </h1>
+                            <p class="mb-12 text-xl sm:text-2xl font-medium leading-tight text-gray-400 text-center lg:mx-0 lg:text-left">
+                                Help your audience spend more time by providing an eye-pleasing user experience. Boost conversion and
+                                <span class="text-white">engagement up to 323%.</span> Accept darkness. Live through the night.
+                            </p>
+
+                            <div class="flex flex-wrap items-center gap-6 xl:gap-12 sm:grid sm:grid-flow-col justify-center lg:flex lg:justify-start">
+
+                                <!-- CTA Button -->
+                                <a target="_blank"
+                                   href="https://go.wppool.dev/0LP"
+                                   rel="noopener"
+                                   class="group relative mr-12 inline-flex items-center justify-center gap-2 rounded-full bg-orange-600 px-6 py-3 text-base font-medium uppercase text-white transition-all hover:bg-orange-500 sm:mr-0 md:px-8 md:py-3.5 md:text-lg">
+                                    Try live demo
+                                    <span class="ml-2">
+                                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 674"><path fill="currentColor" d="m897 674l-96-84q95-109 95-253T801 85l96-85q60 69 93.5 155.5T1024 337t-33.5 181.5T897 674zM753 548l-97-85q48-55 48-126t-48-126l97-84q79 90 79 210t-79 211zm-241-83q-53 0-90.5-37.5T384 337t37.5-90.5T512 209t90.5 37.5T640 337t-37.5 90.5T512 465zm-241 83q-79-91-79-211t79-210l97 84q-48 55-48 126t48 126zm-48 42l-96 84q-60-69-93.5-155.5T0 337t33.5-181.5T127 0l96 85q-95 108-95 252t95 253z"/></svg>
+                                    </span>
+                                </a>
+
+                                <!-- Hero Meta -->
+                                <div class="inline-block">
+                                    <div class="text-[clamp(1.5rem,2vw,2.2rem)] leading-tight font-semibold text-white">20000+</div>
+                                    <div class="flex items-center gap-1.5">
+                                        <p class="m-0 text-lg inline-block leading-tight font-semibold text-stone-300">
+                                            Active installation <span>|</span>
+                                        </p>
+                                        <span class="inline-block">
+                                            <img width="15" height="14" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/392ada8b-e8b5-44d2-8ba6-528527001000/public" alt="Star" loading="eager" class="h-[14px] w-[15px]">
+                                        </span>
+                                        <span class="inline-block">
+                                            <img width="15" height="14" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/392ada8b-e8b5-44d2-8ba6-528527001000/public" alt="Star" loading="eager" class="h-[14px] w-[15px]">
+                                        </span>
+                                        <span class="inline-block">
+                                            <img width="15" height="14" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/392ada8b-e8b5-44d2-8ba6-528527001000/public" alt="Star" loading="eager" class="h-[14px] w-[15px]">
+                                        </span>
+                                        <span class="inline-block">
+                                            <img width="15" height="14" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/392ada8b-e8b5-44d2-8ba6-528527001000/public" alt="Star" loading="eager" class="h-[14px] w-[15px]">
+                                        </span>
+                                        <span class="inline-block">
+                                            <img width="15" height="14" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/32a1b6ee-d017-4d94-c755-c332ba58e000/public" alt="Star" loading="eager" class="h-[14px] w-[15px]">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image -->
+                    <div class="w-full lg:w-1/2">
+                        <div class="relative pt-5 w-full">
+
+                            <div class="demo-content">
+                                <div class="demo dark-demo hidden">
+                                    <img width="821" height="482"
+                                         src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/c2c06225-fb6c-4b21-9dc5-f22c43a98c00/public"
+                                         alt="Dark Mode Thumb"
+                                         class="w-full h-auto"
+                                         loading="eager" decoding="sync">
+                                </div>
+                                <div class="demo light-demo block">
+                                    <img width="821" height="482"
+                                         src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/a47376d1-0d7c-484e-8289-633274ab3000/public"
+                                         alt="Light Mode Thumb"
+                                         class="w-full h-auto"
+                                         loading="eager" decoding="async">
+                                </div>
+                            </div>
+
+                            <!-- Demo Control -->
+                            <div class="mt-12 sm:mt-16 text-center">
+                                <button class="dark-btn mx-2 w-24 border-0 bg-transparent text-sm capitalize text-white focus:border-0 focus:outline-0">
+                                    <img
+                                         src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/5cd04cf7-3ac1-4b73-61d9-2a90ac92be00/public"
+                                         alt="Dark Mode Button"
+                                         class="mb-2 rounded-lg w-full"
+                                         loading="eager" decoding="async">
+                                    dark
+                                </button>
+                                <button class="light-btn active mx-2 w-24 border-0 bg-transparent text-sm capitalize text-white focus:border-0 focus:outline-0">
+                                    <img width="69" height="45"
+                                         src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/711bbe92-8da8-4034-0e43-703d98c6de00/public"
+                                         alt="Light Mode Button"
+                                         class="mb-2 rounded-lg w-full"
+                                         loading="eager" decoding="async">
+                                    light
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Sites -->
+                <div class="mt-10 sm:mt-12 grid items-center justify-between grid-flow-row sm:grid-flow-col grid-cols-2 sm:grid-cols-none gap-4 sm:gap-8">
+                    <div class="text-2xl uppercase text-white whitespace-nowrap col-span-3 sm:col-auto text-center sm:text-left">
+                        Featured on
+                    </div>
+                    <a target="_blank" rel="noopener"
+                       href="https://kinsta.com/blog/wordpress-dark-mode/#4-ways-to-implement-dark-mode-on-wordpress/"
+                       class="opacity-60 transition-all duration-300 hover:opacity-100 focus:opacity-100 focus:outline-2 focus:outline-blue-500"
+                       aria-label="Read article about WP Dark Mode on Kinsta blog">
+                        <img width="133" height="38"
+                             src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/f7b4aade-aacf-4315-b911-974e59e97000/public"
+                             alt="Featured on Kinsta"
+                             loading="eager" decoding="async">
+                    </a>
+                    <a target="_blank" rel="noopener"
+                       href="https://www.wpbeginner.com/plugins/how-to-add-dark-mode-to-your-wordpress-admin-dashboard/"
+                       class="opacity-60 transition-all duration-300 hover:opacity-100">
+                        <img width="158" height="48"
+                             src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/ea793acc-2dfb-4013-2095-9c571f585e00/public"
+                             alt="Featured on WPBeginner"
+                             loading="eager" decoding="async">
+                    </a>
+                    <a target="_blank" rel="noopener"
+                       href="https://wpengine.com/resources/add-dark-mode-night-mode-wordpress-site/"
+                       class="opacity-60 transition-all duration-300 hover:opacity-100">
+                        <img width="154" height="30"
+                             src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/7347b4a3-60e6-4910-8669-5a0a87a4c400/public"
+                             alt="Featured on WP Engine"
+                             loading="eager" decoding="sync">
+                    </a>
+                    <a target="_blank" rel="noopener"
+                       href="https://wphive.com/tutorials/elementor-dark-mode-customization/"
+                       class="opacity-60 transition-all duration-300 hover:opacity-100">
+                        <img width="132" height="44"
+                             src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/892f106e-c164-46a0-5422-38e2c468fd00/public"
+                             alt="Featured on WPHive"
+                             loading="eager" decoding="async">
+                    </a>
+                    <a target="_blank" rel="noopener"
+                        href="https://www.cloudways.com/blog/wordpress-dark-mode/#method1"
+                        class="opacity-60 transition-all duration-300 hover:opacity-100">
+                        <img width="130" height="26" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/b24d670a-ff1e-4688-79b1-6cf3374cd000/public" alt="Featured On Cloudway" loading="eager" decoding="async">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotation Banner Section -->
+        <section class="relative bg-neutral-900 py-12 md:py-20 lg:py-24">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <blockquote class="quote-content mx-auto mb-9 max-w-4xl">
+                    <h2 class="mb-8 text-[clamp(1.5rem,2vw,2.2rem)] text-center font-semibold leading-snug tracking-normal text-white">
+                        "Modern light exposure requires modern solutions and strategies. Pay attention to your "light diet," and use the help that's available to make the light in your life work on behalf of your health and well-being."
+                    </h2>
+
+                    <!-- Author Section -->
+                    <div class="author mx-auto mt-8 flex justify-center max-w-sm gap-x-4 gap-y-2">
+                        <img width="56" height="56"
+                             src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/30595325-c420-4fbf-b4dd-6873e2067900/public"
+                             alt="Dr. Michael J. Breus"
+                             class="h-14 w-14 rounded-full object-cover"
+                             loading="lazy" decoding="async">
+
+                            <div class="block">
+                                <p class="self-end text-left text-base font-medium text-white">
+                                    Michael J. Breus, PhD, DABSM
+                                </p>
+                                <a target="_blank"
+                                href="https://thesleepdoctor.com/"
+                                class="self-start text-left text-sm text-gray-300 transition-colors duration-300 hover:text-white hover:underline"
+                                rel="noopener">
+                                    The Sleep Doctor<sup class="text-xs">tm</sup>
+                                </a>
+                            </div>
+                    </div>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Display Feature Section --->
+        <section class="bg-black py-12 md:py-20 lg:py-24">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-9/12">
+                        <div class="section-title">
+                            <h2 class="mb-8 max-w-4xl text-[clamp(2rem,6vw,5rem)] font-semibold leading-tight tracking-tighter text-white">
+                                <span class="text-zinc-400">Dark mode &amp; light mode</span> Lifelike colors for unreal beauty
+                            </h2>
+                            <p class="light mb-10 md:mb-24 max-w-3xl text-lg md:text-xl lg:text-2xl text-gray-300 font-medium leading-normal">
+                                <span class="font-semibold text-white">Less eye strain. More user satisfaction.</span> Dark mode is not only a modern-day trend rather a user demand. It is the future of the user interface.
+                                <a target="_blank" href="http://hj.diva-portal.org/smash/get/diva2:1464394/FULLTEXT01.pdf" class="text-gray-300 transition-colors duration-300 hover:underline focus:outline-none focus:ring-2 focus:ring-orange-500" rel="noopener">
+                                    Research
+                                </a>
+                                says users are going to spend more time in front of screens in Dark Mode that translates to increased ROI and superior conversion rate.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Display Feature Image -->
+                    <div class="w-full">
+                        <div class="display-feature-image">
+                            <img width="1219" height="700"
+                                 src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/b7baf55a-3adb-453a-81c0-50ea4e9c2a00/public"
+                                 alt="WP Dark Mode Feature Display - Dark and Light Mode Comparison"
+                                 class="w-full h-auto"
+                                 loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core features Section --->
+        <section id="features" class="py-16 md:py-24 bg-slate-950">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-amber-500 via-orange-500 to-orange-600 bg-clip-text text-transparent">Core features</h2>
+
+                <div class="grid md:grid-cols-2 gap-2.5 md:gap-4">
+                    <div class="bg-neutral-800 p-8 pt-10 md:p-12 md:pt-16 sm:p-8 mb-6 md:mb-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-5">OS-based color mode</h3>
+                        <p class="text-gray-300 text-xl font-medium mb-6">WP Dark Mode automatically shows the dark mode if the OS preferred theme is
+                            dark. Your hassle ends here!</p>
+                        <img src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/70426b1b-479c-4d3d-3b45-d43b562db500/public" alt="wp dark mode OS-based" loading="lazy" decoding="async" class="w-full h-auto">
+                    </div>
+
+                    <div class="bg-neutral-800 p-8 pt-10 md:p-12 md:pt-16 sm:p-8 mb-6 md:mb-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Time mode</h3>
+                        <p class="text-gray-300 text-xl font-medium mb-8">No need to worry about scheduling time for dark mode! WP Dark Mode Pro will
+                            turn your website into dark mode based on the local time of the user.</p>
+                        <img src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/d68bdc0e-10b9-4e44-d6ab-0e9a13bc8e00/public" alt="wp dark mode tiem base"  loading="lazy" decoding="async" class="w-full h-auto">
+                    </div>
+
+                    <div class="bg-neutral-800 p-8 pt-10 md:p-12 md:pt-16 sm:p-8 mb-6 md:mb-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Multiple switch</h3>
+                        <p class="text-gray-300 text-xl font-medium mb-8">Multiple dark mode switch button style is available in WP Dark Mode Pro
+                            which you can display for your user to turn on-off the dark mode.</p>
+                        <img src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/90b6bdcd-18e2-4ee8-e858-dbdfa5a0da00/public" alt="Multiple switch"  loading="lazy" decoding="async" class="w-full h-auto">
+                    </div>
+
+                    <div class="bg-neutral-800 p-8 pt-10 md:p-12 md:pt-16 sm:p-8 mb-6 md:mb-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready-made color schema</h3>
+                        <p class="text-gray-300 text-xl font-medium mb-8">Quickly change the dark mode color from the predefined ready-made color
+                            schema and make your website look standout for the user!</p>
+                        <img src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/38805452-64f7-4425-0061-826384053400/public" alt="Ready-made color schema" loading="lazy" decoding="async" class="w-full h-auto">
+                    </div>
+
+                    <div class="bg-neutral-800 p-8 pt-10 md:p-12 md:pt-16 sm:p-8 mb-6 md:mb-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Custom position, CTA &amp; attention effects</h3>
+                        <p class="text-gray-300 text-xl font-medium mb-8">Brand new switch styles with custom switch position feature. Seven types of animation effects for your dark mode switch. You can also add CTA text on your dark mode switch as per your wish!</p>
+                        <img src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/c108b145-df3d-4fcf-81bd-8d0045a34800/public" alt="Custom position" loading="lazy" decoding="async" class="w-full h-auto">
+                    </div>
+
+                    <div class="bg-neutral-800 p-8 pt-10 md:p-12 md:pt-16 sm:p-8 mb-6 md:mb-0">
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Make it yours</h3>
+                        <p class="text-gray-300 text-xl font-medium mb-8">You can customize the dark mode background text and color as you want with
+                            the custom color feature of our WP Dark Mode. Pick the color schema of your preference
+                            and make it yours! </p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-neutral-800 grid md:grid-cols-2 items-center overflow-hidden">
+                        <div class="p-10 text-left">
+                            <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Popular page builder support</h3>
+                            <p class="text-gray-300 text-xl font-medium">WP Dark Mode supports all the popular page builders in WordPress. After install and
+                                activation of the plugin, it works perfectly with all the page builders. You can also
+                                easily place the dedicated dark mode switch widget anywhere on your page or post
+                                with our page builder support.</p>
+                        </div>
+
+                        <div class="grid grid-cols-6 grid-rows-3 gap-6 md:gap-11 pt-0 p-6 md:p-0">
+                            <!-- Oxygen - spans 3 columns, top row -->
+                            <div class="col-span-3 row-start-1 h-full min-h-36 rounded-b-lg border-4 border-black border-t-0 bg-gradient-to-b from-slate-800 to-gray-800 flex items-center justify-center relative shadow-lg">
+                                <img width="121" height="119" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/eb61b395-d215-4fb3-8865-b33644cd1000/public" alt="Page builder Logo" class="w-28" loading="lazy" decoding="async">
+                            </div>
+                            <!-- Gutenberg - spans 3 columns, top row -->
+                            <div class="col-span-3 row-start-1 h-full min-h-[150px] rounded-bl-lg border-4 border-black border-t-0 border-r-0 bg-white flex items-center justify-center relative shadow-lg">
+                                <img width="134" height="134" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/357be45a-9e58-4168-0e73-70e1ab289900/public" alt="Page Gutenberg Logo" class="w-28" loading="lazy" decoding="async">
+                            </div>
+                            <!-- Elementor - spans 4 columns, middle row -->
+                            <div class="col-span-4 row-start-2 h-full min-h-[150px] rounded-lg border-4 border-black bg-gradient-to-br from-rose-500 to-indigo-900 flex items-center justify-center relative shadow-lg">
+                                <img width="115" height="115" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/0e8cfe0f-bb7a-4b03-f251-1b3bf5e8a100/public" alt="Page Elementor Logo" class="w-28" loading="lazy" decoding="async">
+                            </div>
+                            <!-- Visual Composer - spans 2 columns, middle row -->
+                            <div class="col-span-2 row-start-2 h-full min-h-[150px] rounded-l-lg border-4 border-black border-r-0 bg-blue-900  flex items-center justify-center relative shadow-lg">
+                                <img width="197" height="115" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/b1e030e6-1790-47df-38ff-00ff86cc4900/public" alt="Page builder Logo" class="w-28" loading="lazy" decoding="async">
+                            </div>
+                            <!-- Divi - spans 3 columns, bottom row -->
+                            <div class="col-span-3 row-start-3 h-full min-h-[150px] rounded-t-lg border-4 border-black border-b-0 bg-gradient-to-br from-fuchsia-800 to-violet-900 flex items-center justify-center relative shadow-lg">
+                                <img width="132" height="132" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/4337df10-e267-4dcf-816d-2aa96108a000/public" alt="Page builder Logo" class="w-28" loading="lazy" decoding="async">
+                            </div>
+                            <!-- WP Bakery - spans 3 columns, bottom row -->
+                            <div class="col-span-3 row-start-3 h-full min-h-[150px] rounded-tl-lg border-4 border-black border-b-0 border-r-0 bg-sky-700 flex items-center justify-center relative shadow-lg">
+                                <img width="153" height="115" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/3ed460ca-ced7-4b1b-5ebe-d94c03aabc00/public" alt="Page builder Logo" class="w-28" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Dark Mode Checker Section - Converted to Tailwind CSS -->
+        <section class="relative bg-slate-950 overflow-hidden pt-8 pb-16 md:py-24 lg:py-36 bg-cover bg-no-repeat before:content-[''] before:absolute before:-bottom-[30%] before:left-0 before:inline-block before:w-full before:h-full  before:bg-no-repeat before:bg-contain before:bg-[url('https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/350b2310-00ce-4871-bf50-586026cf3000/public')]" style="background-image: url(https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/cf340d0b-19a4-44a8-196d-7ee688504600/public);">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14 relative z-10">
+                <div class="flex justify-center">
+                    <div class="w-full max-w-4xl">
+                        <div class="text-center">
+                            <div class="inline-block px-4 py-3 text-white cursor-pointer relative z-0 rounded-full select-none touch-manipulation text-base font-medium mb-4 border border-fuchsia-500">
+                                <svg class="h-4 w-auto inline-block mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#fff" d="m23.043 4.65l-.404-2.313l-1.59 1.727l-2.324-.33l1.15 2.045l-1.03 2.107l2.3-.463l1.687 1.633l.27-2.332l2.075-1.1l-2.135-.976zm3.174 13.548l-.182-1.25l-.882.905l-1.245-.214l.588 1.117l-.588 1.118l1.245-.214l.882.906l.182-1.25l1.133-.56l-1.133-.558zM4.92 7.672l.948-.372l.844.57l-.062-1.017l.802-.627l-.985-.256l-.35-.957l-.546.86l-1.017.035l.647.786l-.28.978zm5.52 2.833l1.02-1.096l1.48.218l-.726-1.31l.667-1.34l-1.47.286l-1.068-1.048l-.182 1.487l-1.328.693l1.358.632l.25 1.477zm6.794 2.216c-.588-.367-1.172-.617-1.692-.728c-.492-.09-1.04-.15-1.425.374L2.562 30.788h6.68l9.67-15.416c.302-.576.01-1.04-.284-1.447c-.325-.417-.806-.835-1.394-1.204zm-3.62 9.216c-.255-.396-.74-.857-1.374-1.254c-.632-.396-1.258-.634-1.726-.69l4.42-7.052c.065-.013.263-.02.544.066c.346.092.785.285 1.225.562c.504.313.908.677 1.133.97a1.12 1.12 0 0 1 .2.35l-4.422 7.048z"/></svg>
+                                 Live Dark Mode Checker
+                            </div>
+                            <h2 class="text-white max-w-2xl mx-auto font-semibold mb-4 tracking-tight text-[clamp(2.8rem,4.5vw,4.3rem)] leading-tight">How does your site look in Dark Mode?</h2>
+                            <p class="text-base text-white mb-10">Check how your website looks in dark mode. Just enter your URL and hit preview</p>
+                            <div class="max-w-lg w-full mx-auto bg-white border border-gray-300 rounded-full p-2 px-3 flex items-center justify-center min-h-16 shadow-sm mb-4">
+                                <input name="website-url" type="url" class="flex-1 w-36 sm:w-auto border-none outline-none px-3 py-3 font-normal bg-transparent rounded-full placeholder:text-gray-400 disabled:opacity-50" placeholder="Enter your website URL">
+                                <button class="bg-orange-500 text-xs sm:text-base text-white font-semibold border-none rounded-full px-4 py-3 whitespace-nowrap cursor-pointer transition-all duration-200 ease-in-out shadow-md flex items-center gap-2 hover:bg-orange-600 hover:opacity-90 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed" id="previewBtn">
+                                    Preview Dark Mode
+                                </button>
+                            </div>
+                            <span class="pt-8 max-w-3xl mx-auto text-base text-orange-400 inline-block">This preview tool does not include all features and shows a basic look of Dark Mode on your site. Install the plugin on your website for the full experience and accurate results</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-50 py-12 md:py-20 lg:py-24 overflow-hidden" id="social_share">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="social-share-block flex flex-col gap-5 relative transition-all duration-300 [&_.single-option]:transition-all [&_.single-option]:duration-300 [&_.single-option_h2]:transition-all [&_.single-option_h2]:duration-300 [&_.single-option]:bg-neutral-800 [&_.single-option_.dark-img]:block [&_.single-option_.light-img]:hidden [&_.single-option_h2]:text-white">
+                    <div class="mode-btn absolute top-0 -left-4 z-10 h-full lg:-left-10 xl:-left-16">
+                        <div class="cng-btn sticky top-36 flex flex-col gap-4 max-md:p-2.5 max-md:bg-gray-50 max-md:rounded-r-lg">
+                            <input type="radio" name="mode-change" id="lightlabel" class="sr-only peer/light">
+                            <input type="radio" name="mode-change" id="darklabel" class="sr-only peer/dark" checked>
+                            <label for="lightlabel" class="light h-10 aspect-square rounded-full cursor-pointer relative border-2 border-black/[0.06] bg-black/[0.06] peer-checked/light:border-orange-500 peer-checked/light:bg-orange-500 before:absolute before:content-[''] before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:h-7 before:aspect-square before:bg-white peer-checked/light:before:bg-neutral-800">
+                            </label>
+                            
+                            <label for="darklabel" class="dark h-10 aspect-square rounded-full cursor-pointer relative border-2 border-black/[0.06] bg-black/[0.06] peer-checked/dark:border-orange-500 peer-checked/dark:bg-orange-500 before:absolute before:content-[''] before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:h-7 before:aspect-square peer-checked/dark:before:bg-neutral-800 before:bg-white">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-[3fr_4fr] gap-5 max-sm:grid-cols-1">
+                        <div class="single-option pt-9 pb-60 px-8 md:py-14 md:px-12  bg-no-repeat bg-center rounded-2xl" style="background-image: url(https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/112e34a3-4ee8-4a58-6d14-d9a0f7690600/public);">
+                            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] max-w-80 max-sm:text-[2.5rem] leading-tight mb-6"><span class="bg-gradient-to-r from-red-600 to-orange-400 bg-clip-text text-transparent">Insanely FAST ⚡ </span> Social Share plugin</h2>
+                        </div>
+
+                        <div class="single-option py-9 px-8 md:py-16 md:px-12 bg-no-repeat bg-center rounded-2xl" style="background-image: url(https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/81e2bd27-9df5-4dfc-a600-375215651d00/public);">
+                            <img width="417" height="253" class="dark-img sm:w-80 relative -left-2.5 mb-8 w-full hidden" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/5a04d2cb-0146-4c42-0f73-b7ac41439400/public" alt="Pro Features" loading="lazy" decoding="async">
+                            <img width="417" height="253" class="light-img sm:w-80 relative -left-2.5 mb-8 w-full hidden" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/9ff06455-92f7-4b55-4cc5-77d6425aaa00/public" alt="Pro Features" loading="lazy" decoding="async">
+
+                            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] max-w-80 mb-6 md:mb-0 leading-tight"><span class="block">Only Social</span> <span class="block">Share plugin with</span> <span class="block"><span class="text-orange-500">Dark Mode</span> Support</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="single-option py-12 px-9 md:py-21 md:px-10 rounded-2xl grid md:grid-cols-[2fr_3fr] items-center grid-cols-1">
+                        <div>
+                            <img width="101" height="101" class="sm:w-25 mb-4 w-18" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/8dbe1b0b-71de-4f54-42c7-54018a2ac700/public" alt="Pro Features" loading="lazy" decoding="async">
+                            <h2 class="text-[clamp(2.5rem,5.625vw,4.5rem)] leading-tight mb-6"><span class="bg-gradient-to-r from-orange-700 to-orange-400 bg-clip-text text-transparent">Gorgeous</span> share button</h2>
+                        </div>
+                        <img width="593" height="541" class="max-w-lg w-full md:w-auto" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/c57cfce1-78b6-46a9-b239-dfde6453f900/public" alt="Pro Features" loading="lazy" decoding="sync">
+                    </div>
+
+                    <div class="grid lg:grid-cols-[2fr_1fr] gap-5 xl:grid-cols-[3fr_2fr] grid-cols-1">
+
+                        <div class="single-option py-12 px-9 md:py-21 md:px-10 rounded-2xl grid lg:grid-cols-[2fr_3fr] items-center grid-cols-1">
+                            <div>
+                                <img width="64" height="64" class="w-16 mb-2.5" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/9f6cc0b1-a6f6-4cd5-d0f9-194727e5fe00/public" alt="Pro Features" loading="lazy" decoding="async">
+                                <img width="64" height="64" class="w-16 mb-2.5 hidden" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/ac05d461-2d55-419b-0367-0ef65b262000/public" alt="Pro Features" loading="lazy" decoding="async">
+
+                                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] leading-tight mb-6"><span class="text-sky-500">Gutenberg</span> block widget</h2>
+                            </div>
+
+                            <img width="322" height="369" class="max-w-80" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/944ab165-ba67-4dea-aa22-caa9b9f41800/public" alt="Pro Features" loading="lazy" decoding="async">
+                            <img width="322" height="369" class="max-w-80 hidden" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/b2f35978-dcfd-4295-1a69-8e9188ac7c00/public" alt="Pro Features" loading="lazy" decoding="sync">
+                        </div>
+
+                        <div class="single-option row-span-2 col-start-2 col-end-3 py-12 px-10 rounded-2xl max-sm:col-auto max-sm:row-auto">
+                            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] leading-tight mb-6 md:mb-0"><span class="block text-center">Showcase</span> <span class="block text-center text-orange-500">Social networks</span> <span class="block text-center">with style</span></h2>
+
+                            <img width="326" height="222" class="mt-10 mx-auto" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/271c64c2-44e9-4bcf-c820-35290fdcc100/public" alt="Pro Features" loading="lazy" decoding="async">
+                            <img width="248" height="249" class="max-w-72 mx-auto mt-10 block" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/7255de21-f1ca-4aae-1b28-d3e39e15e500/public" alt="Pro Features" loading="lazy" decoding="async">
+                        </div>
+
+                        <div id="click_to_tweet" class="px-8 py-9 md:pt-16 md:px-11 md:pb-10 bg-blue-500 rounded-2xl">
+                            <p class="text-white text-2xl mb-4">Social Sharing Buttons &amp; Click to Tweet features add relevant blocks to the much-loved WordPress block editor to increase Twitter &amp; social shares</p>
+                            <button type="submit" class="block ml-auto text-white text-lg font-semibold bg-transparent border-none shadow-none focus:border-none focus:outline-none">Click to Tweet 
+                                <svg class=" inline-block" xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13" fill="none" aria-hidden="true">
+                                    <path d="M11.4198 0.38543H13.4898L8.9748 5.54543L14.2848 12.5654H10.1298L6.8748 8.30543L3.1398 12.5654H1.0698L5.8998 7.04543L0.799805 0.38543H5.0748L8.0148 4.27043L11.4198 0.38543ZM10.6998 11.3354H11.8398L4.4448 1.55543H3.2148L10.6998 11.3354Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-16 md:pt-28">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="content">
+                            <div class="flex gap-2.5 items-center mb-4">
+                                <img class="w-10 h-auto" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/ed5b8b5c-f0a7-47e4-0a2f-003dedffc000/public" loading="lazy" alt="Super Lightweight">
+                                <h2 class="mb-0 text-[clamp(1.5rem,2.4vw,2.5rem)] bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent">Super Lightweight</h2>
+                            </div>
+                            <p class="text-lg text-neutral-800 max-w-lg">Scripts don't run where they shouldn't. Inline SVG icons and custom tables to reduce bloat, no CLS warnings, and lightweight <span class="font-semibold">under 5 KB</span></p>
+                        </div>
+                        <div class="content">
+                            <div class="flex gap-2.5 items-center mb-4">
+                                <img class="w-10 h-auto" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/687412fd-6fcd-49ab-7f2e-950779092700/public" loading="lazy" alt="Showcase Sharing">
+                                <h2 class="mb-0 text-[clamp(1.5rem,2.4vw,2.5rem)] bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Showcase Sharing</h2>
+                            </div>
+                            <p class="text-lg text-neutral-800 max-w-lg">Increase your social visibility. <span class="font-semibold">Display single and total share counts</span> from Twitter, Facebook, and more on your site's popular content</p>
+                        </div>
+
+                        <div class="content">
+                            <div class="flex gap-2.5 items-center mb-4">
+                                <img class="w-10 h-auto" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/10121c02-344d-4971-d919-906b4937b500/public" loading="lazy" alt="Block Editor Ready">
+                                <h2 class="mb-0 text-[clamp(1.5rem,2.4vw,2.5rem)] bg-gradient-to-r from-pink-500 to-red-400 bg-clip-text text-transparent">Block Editor Ready</h2>
+                            </div>
+                            <p class="text-lg text-neutral-800 max-w-lg"><span class="font-semibold">Social Sharing Buttons &amp; Click to Tweet</span> features add relevant blocks to the much-loved WordPress block editor to increase Twitter &amp; social shares</p>
+                        </div>
+
+                        <div class="content">
+                            <div class="flex gap-2.5 items-center mb-4">
+                                <img class="w-10 h-auto" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/48f3a645-e869-43e4-ae8d-1e4135a9df00/public" loading="lazy" alt="Works on all devices">
+                                <h2 class="mb-0 text-[clamp(1.5rem,2.4vw,2.5rem)] bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">Works on all devices</h2>
+                            </div>
+                            <p class="text-lg text-neutral-800 max-w-lg">Responsive, lightweight, fast and works on all devices. Looks downright gorgeous from desktops to mobile phones. It just works</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Mode Section - Converted from custom CSS to Tailwind CSS -->
+        <section class="bg-neutral-900 relative overflow-hidden">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-6/12">
+                        <div class="pt-12 pb-10 pr-10 md:pt-40 md:pb-32 lg:pb-0">
+                            <h2 class="font-semibold mb-8 tracking-tight text-[clamp(2.8rem,4.5vw,4.3rem)] leading-tight text-transparent bg-gradient-to-t from-amber-500 via-orange-500 to-orange-600 bg-clip-text">Dark mode based image support</h2>
+                            <p class="text-xl md:text-2xl text-zinc-400 font-medium leading-snug mb-8">Worried about how dark images will look in dark mode? Don't worry, you can have a different
+                                version of the same image. Add a lighter version of your pictures, and WP Dark Mode will
+                                automatically serve that. Light or dark - deliver your audience an extraordinary website
+                                24x7.</p>
+                            <a href="https://wppool.dev/wp-dark-mode-pricing" class="group relative inline-flex items-center justify-center rounded bg-orange-600 px-6 py-2.5 text-base font-medium uppercase text-white transition-all hover:bg-orange-500">Buy now</a>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-6/12">
+                        <div class="md:absolute md:-bottom-16 lg:left-0 lg:relative pb-16 md:pb-0"><div class="relative max-w-5xl md:w-screen right-0 rounded">
+                            <img width="943" height="694" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/06bea2c8-00c2-479d-044d-a48edcc43a00/public" alt="Pro Features" loading="lazy" class="twentytwenty-before" >
+                            <img width="943" height="694" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/7c1d00d9-3014-481c-2602-4b88d50ee000/public" alt="Pro Features" loading="lazy" class="twentytwenty-after hidden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- WooCommerce support -->
+        <section class="pt-12 pb-12 lg:pt-32 lg:pb-24 md:pt-24 md:pb-16 overflow-hidden">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="flex flex-wrap lg:flex-row-reverse items-center">
+                    <div class="w-full lg:w-5/12">
+                        <div class="fadeInRight">
+                            <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold mb-7 tracking-tight leading-tight bg-gradient-to-r from-purple-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">Full WooCommerce support</h2>
+                            <p class="text-xl md:text-2xl text-zinc-400 font-medium leading-snug mb-8">We really understand the necessity of having a dark mode on your WooCommerce website. So we
+                                have added the compatibility of WooCommerce in our WP Dark Mode. Just activate the plugin
+                                and let your users enjoy the amazing view of dark mode.</p>
+                            <a href="https://wppool.dev/wp-dark-mode-pricing" class="group relative inline-flex items-center justify-center rounded bg-orange-600 px-6 py-2.5 text-base font-medium uppercase text-white transition-all hover:bg-orange-500">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-7/12">
+                        <div class="mt-10 lg:mt-15">
+                            <img width="908" height="603" 
+                            src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/42eb0a3a-5519-49eb-90ba-b2fa532aa000/public" 
+                            alt="Woo-commerce Support Features"
+                            class="md:-ml-20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom CSS support -->
+        <section class="py-12 lg:py-28 md:pt-24 md:pb-16 bg-neutral-900">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="mx-auto max-w-screen-lg text-center">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold mb-7 tracking-tight leading-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Custom CSS support</h2>
+                    <p class="text-2xl text-zinc-400 font-medium leading-snug mb-12">Easily edit buttons, specific sections, or background color of the store in your favorite style using the custom CSS support feature of WP Dark Mode plugin.</p>
+                    <pre class="relative overflow-auto rounded-sm bg-black p-6 my-2 text-gray-300 font-mono text-base text-left whitespace-pre leading-6  [&_.token.comment]:text-gray-400 [&_.token.punctuation]:text-gray-300 [&_.token.selector]:text-purple-300 [&_.token.property]:text-yellow-300 [&_.token.string]:text-green-300 language-css"><div class="absolute top-0 left-0 w-full h-5 bg-neutral-700">
+                            <span class="absolute top-1.5 left-7 w-2 h-2 bg-orange-600 rounded-full"></span>
+                            <span class="absolute top-1.5  left-11 w-2 h-2 bg-yellow-400 rounded-full"></span>
+                            <span class="absolute top-1.5 left-16 w-2 h-2 bg-green-500 rounded-full"></span>
+                        </div><code class="language-css"><span class="token comment">/* Dark Mode Style */</span>
+<span class="token selector">.dummy</span> <span class="token punctuation">{</span>
+<span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+<span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.dummy:before</span> <span class="token punctuation">{</span>
+<span class="token property">top</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+<span class="token property">left</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+<span class="token property">right</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+<span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token property">bottom</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+<span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+<span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+<span class="token property">background</span><span class="token punctuation">:</span> lightgray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Mode-ify Gutenberg -->
+        <section class="py-12 lg:py-28 md:pt-24 md:pb-16 bg-slate-950">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="mx-auto max-w-screen-lg text-center">
+                    <div class="section-heading">
+                        <h2 class="font-semibold mb-7 tracking-tight text-[clamp(2.8rem,4.5vw,4.3rem)] leading-tight bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent">Dark Mode-ify Gutenberg</h2>
+                        <p class="text-xl md:text-2xl text-zinc-400 font-medium leading-snug mb-12">You can now change the Gutenberg editor color in WP Dark Mode. There are six different color schemes available for the Gutenberg editor. Switch to any color scheme among them as per your wish.</p>
+                    </div>
+                    <figure class="gutenburge-block-img pl-md-3 pr-md-3">
+                        <img width="1170" height="560" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/f4007de3-aea3-4837-c3ad-b045deae6d00/public" alt="Gutenberg" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:pb-96 bg-slate-950 overflow-hidden bg-bottom bg-no-repeat" style="background-image: url(https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/1303bf6d-bfa4-4bac-753d-bb212080c600/public)">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="section-heading max-w-screen-lg mx-auto text-center">
+                    <h2 class="font-semibold mb-7 tracking-tight text-[clamp(2.8rem,4.5vw,4.3rem)] leading-tight text-white">W-I-D-E compatibility</h2>
+                    <p class="text-xl md:text-2xl text-zinc-400 font-medium leading-snug mb-12">WP Dark Mode is compatible with thousands of WordPress themes and plugins by default.
+                        However, we have fine-tuned each element for the most popular WordPress themes and plugins.
+                    </p>
+                </div>
+
+                <div class="grid mt-10 gap-5 grid-cols-3 md:grid-cols-4 xl:grid-cols-6">
+                    <img width="160" height="160" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/43b2c853-99ed-4946-56de-0bb67e7ec200/public" alt="Theme Logo" loading="lazy" decoding="async" class="h-40 xl:h-[120px] md:h-auto w-auto md:w-full p-0 m-auto transition-all duration-300 ease-in-out hover:scale-105">
+                    <img width="160" height="160" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/4bff1028-40a2-4edc-2701-62c1c55ba500/public" alt="Theme Logo" loading="lazy" decoding="async" class="h-40 xl:h-[120px] md:h-auto w-auto md:w-full p-0 m-auto transition-all duration-300 ease-in-out hover:scale-105">
+                    <img width="160" height="160" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/2e19e3d0-7f29-42b8-8a31-25e6a7d6a800/public" alt="Theme Logo" loading="lazy" decoding="async" class="h-40 xl:h-[120px] md:h-auto w-auto md:w-full p-0 m-auto transition-all duration-300 ease-in-out hover:scale-105">
+                    <img width="160" height="160" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/a7ec2056-a4e0-4d55-8653-b3304afc6500/public" alt="Theme Logo" loading="lazy" decoding="async" class="h-40 xl:h-[120px] md:h-auto w-auto md:w-full p-0 m-auto transition-all duration-300 ease-in-out hover:scale-105">
+                    <img width="160" height="160" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/7b3c52f4-19ec-4319-076d-19b61bac8c00/public" alt="Theme Logo" loading="lazy" decoding="async" class="h-40 xl:h-[120px] md:h-auto w-auto md:w-full p-0 m-auto transition-all duration-300 ease-in-out hover:scale-105">
+                    <img width="160" height="160" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/4b252408-ae9b-4bd7-ce5a-e764badd3300/public" alt="Theme Logo" loading="lazy" decoding="async" class="h-40 xl:h-[120px] md:h-auto w-auto md:w-full p-0 m-auto transition-all duration-300 ease-in-out hover:scale-105">
+                </div>
+
+                <div class="text-center mt-12">
+                    <a target="_blank" href="https://wppool.dev/dark-mode-compatibility" class="group relative inline-flex items-center justify-center rounded bg-orange-600 px-6 py-3 text-base md:text-lg font-medium uppercase text-white transition-all hover:bg-orange-500">explore compatibility</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial section -->
+        <section class="py-12 md:py-20 lg:py-28 bg-black">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="section-title text-center">
+                    <h2 class="text-indigo-50 text-[clamp(3rem,6vw,6rem)] mb-5">Day night difference</h2>
+                    <p class="text-zinc-400 text-[clamp(1.125rem,1.7vw,2rem)] font-medium leading-tight max-w-4xl mx-auto">
+                        We asked our customers what was like before they used Dark Mode. And how it’s improved after
+                        switching to Dark Mode. Hundreds replied. Wow, what a difference.
+                    </p>
+                </div>
+
+                <div class="video-title text-center mt-16 md:mt-24 mb-10">
+                    <h2 class="text-4xl md:text-5xl text-orange-500">Reviews? We call'em the 'Wall of Love'</h2>
+                </div>
+
+                <div class="video grid gap-8 grid-cols-1 md:grid-cols-2 mb-8">
+                    <a href="https://www.youtube.com/watch?v=6OB34ikfhh8?rel=0&amp;autoplay=1" class="popup-youtube group flex items-center justify-center border border-neutral-900 rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out after:absolute after:top-0 after:left-0 after:z-10 after:w-full after:h-full after:bg-black/30 after:transition-all after:duration-300 hover:after:bg-black/50">
+                        <img width="1280" height="720" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/b272a740-f530-4c58-b4a7-e0027b422600/public" alt="Review from Ali Rashidy" loading="lazy" decoding="async">
+                        <span class="icon-play absolute z-20">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="41" viewBox="0 0 38 41" fill="none">
+                                <path class=" transition-all group-hover:fill-orange-500" fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5.34152C0.5 1.87147 4.19994 -0.324354 7.22474 1.34623L35.1497 16.7803C38.2834 18.5116 38.2834 23.037 35.1497 24.7708L7.22716 40.2049C4.20236 41.8754 0.50242 39.6772 0.50242 36.2096L0.5 5.34152Z" fill="white"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=SEoZ2zKzRXs?rel=0&amp;autoplay=1" class="popup-youtube group flex items-center justify-center border border-neutral-900 rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out after:absolute after:top-0 after:left-0 after:z-10 after:w-full after:h-full after:bg-black/30 after:transition-all after:duration-300 hover:after:bg-black/50">
+                        <img width="1280" height="720" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/c6c8dd8b-e2db-4d6b-5a3c-3c98c0317c00/public" alt="Review from Gobinda tarafdar" loading="lazy" decoding="async">
+                        <span class="icon-play absolute z-20">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="41" viewBox="0 0 38 41" fill="none">
+                                <path class=" transition-all group-hover:fill-orange-500" fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5.34152C0.5 1.87147 4.19994 -0.324354 7.22474 1.34623L35.1497 16.7803C38.2834 18.5116 38.2834 23.037 35.1497 24.7708L7.22716 40.2049C4.20236 41.8754 0.50242 39.6772 0.50242 36.2096L0.5 5.34152Z" fill="white"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="review-cta text-center py-8">
+                    <h3 class="text-white text-[clamp(1.375rem,3vw,2.75rem)] leading-tight mb-8 font-semibold">We've got 250+ more reviews like these. Read 'em, or try WP Dark Mode and see the difference yourself</h3>
+                    <div class="flex flex-wrap justify-center items-center gap-5">
+                        <a href="https://wppool.dev/wp-dark-mode-pricing" class="group relative inline-flex items-center justify-center rounded bg-orange-600 px-6 py-2.5 text-base font-medium uppercase text-white transition-all hover:bg-orange-500">Buy Now</a>
+                        <a target="_blank" href="https://wordpress.org/plugins/wp-dark-mode/#reviews" rel="noopener" class="group relative inline-flex items-center justify-center rounded border border-orange-600 bg-transparent px-6 py-2.5 text-base font-medium uppercase text-orange-600 transition-all hover:bg-orange-600 hover:text-white">Read reviews</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lots to love -->
+        <section class="bg-neutral-800 py-12 md:py-20 lg:py-28">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="text-center mb-12">
+                    <h2 class="font-semibold tracking-tight text-[clamp(2.8rem,4.5vw,4.3rem)] leading-tight bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">Lots to love. Less to spend.</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 max-w-4xl mx-auto">
+                    <a href="https://www.wpbeginner.com/wp-tutorials/how-to-add-dark-mode-to-your-wordpress-website-easy/" rel="noopener"  target="_blank" class="flex justify-center p-4 transition-all hover:opacity-80">
+                        <img width="348" height="185" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/ea49b566-9a0c-4705-dbc9-3b6df705f400/public" alt="Thanks to image" loading="lazy" decoding="async">
+                    </a>
+                    <a href="https://wpengine.com/resources/add-dark-mode-night-mode-wordpress-site/" target="_blank" rel="noopener"  class="flex justify-center p-4 transition-all hover:opacity-80">
+                        <img width="283" height="150" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/bff5de93-ae4c-47bf-4ba5-8ce8bd1ede00/public" alt="Thanks to image" loading="lazy" decoding="async">
+                    </a>
+                    <a href="https://youtu.be/T-MgMYkC-sg" target="_blank" rel="noopener" class="flex justify-center p-4 transition-all hover:opacity-80">
+                        <img width="279" height="150" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/b984b110-dcaf-47b4-5b63-65fa64ffe000/public" alt="Thanks to image" loading="lazy" decoding="async">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-neutral-800 pb-12 md:pb-20 lg:pb-28">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-8/12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-left">
+                            <svg class="h-12 w-auto mb-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="#d0d0d0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3M3.223 14A9 9 0 1 0 12 3a9 9 0 0 0-8.294 5.5M7 9H3V5"/></svg>
+                            <h2 class="text-2xl tracking-normal leading-tight text-white max-w-36">Increase page on time</h2>
+                        </div>
+                        <div class="text-left">
+                            <svg class="h-12 w-auto mb-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 164" fill="none">
+                                <path d="M92 113.333V155M58.6667 96.6667V155M25.3334 63.3333V155M8.66671 5L80.7167 77.05C81.1038 77.438 81.5636 77.7459 82.0698 77.9559C82.576 78.166 83.1187 78.2741 83.6667 78.2741C84.2148 78.2741 84.7574 78.166 85.2637 77.9559C85.7699 77.7459 86.2297 77.438 86.6167 77.05L114.05 49.6167C114.831 48.8355 115.891 48.3967 116.996 48.3967C118.101 48.3967 119.16 48.8355 119.942 49.6167L175.333 105M158.667 130V155M125.333 96.6667V155" stroke="#d0d0d0" stroke-width="16.6667" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <h2 class="text-2xl tracking-normal leading-tight text-white max-w-32">Reduce bounce rate</h2>
+                        </div>
+                        <div class="text-left">
+                            <svg class="h-12 w-auto mb-5" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 14 14" fill="#d0d0d0"><g fill="none" stroke="#d0d0d0" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.625c-4.187 0-5.945 3.766-5.945 3.844c0 .078 1.758 3.843 5.945 3.843s5.945-3.765 5.945-3.843c0-.078-1.758-3.844-5.945-3.844M2.169 5.813L.61 4.252m4.525-.354L4.5 1.843m7.331 3.97l1.559-1.56m-4.525-.355L9.5 1.843"/><path d="M5.306 7.081a1.738 1.738 0 1 0 3.388.776a1.738 1.738 0 1 0-3.388-.776"/></g></svg>
+                            <h2 class="text-2xl tracking-normal leading-tight text-white max-w-32">Improve readability</h2>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-4/12">
+                        <h2 class="text-lg text-white mb-7">Start using WP Dark Mode and help your website visitors</h2>
+                        <div class="flex flex-wrap items-center gap-5">
+                            <a href="https://wppool.dev/wp-dark-mode-pricing" class="group relative inline-flex items-center justify-center rounded bg-orange-600 px-6 py-2.5 text-base font-medium uppercase text-white transition-all hover:bg-orange-500">Buy now</a>
+                            <a href="https://wordpress.org/plugins/wp-dark-mode/" target="_blank" rel="noopener" class="group relative inline-flex items-center justify-center rounded border border-orange-600 bg-transparent px-6 py-2.5 text-base font-medium uppercase text-orange-600 transition-all hover:bg-orange-600 hover:text-white">Try for free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-community py-10 sm:py-16 md:py-20 lg:py-32">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="entry-title text-center mb-10">
+                    <h2 class="title text-white font-semibold leading-tight mb-3 tracking-tight text-[32px] sm:text-4xl md:text-[42px] lg:text-5xl">
+                        Join Our <span style="color: #EE5913;">Community</span>
+                    </h2>
+                    <div class="desc text-gray-400 text-base leading-6 sm:text-lg sm:leading-8">
+                        <p>Join our ever-growing community for the latest offers, updates, support, and more</p>
+                    </div>
+                </div>
+                
+                <div class="join-community__group-media flex justify-center mb-11">
+                    <div class="avatar-item">
+                        <img src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/e5a228d1-cc86-4fbf-1b03-67675d540000/public" alt="Community members profile pictures showing active FlexTable users" loading="lazy" decoding="async">
+                    </div>
+                </div>
+                
+                <div class="btn-box flex flex-wrap justify-center items-center gap-4">
+                    <a href="https://lnk.wppool.dev/la2gPZG" target="_blank" rel="noopener" class="social-btn flex items-center gap-2 group text-white bg-sky-500 border-sky-500 rounded-full px-4 py-3 text-base md:text-xl font-medium whitespace-nowrap transition-all duration-300 hover:bg-sky-500 hover:border-sky-500" aria-label="Join WPPOOL Facebook Community">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+                            <path fill="#fff" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669c1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                        </svg>
+                        Facebook
+                        <svg class="inline transition-all group-hover:translate-x-1.5" xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 13" fill="none" aria-hidden="true">
+                            <path d="M1.39599 7.2108H18.3033L15.1358 10.3784C14.2259 11.2882 15.5907 12.6529 16.5005 11.7431L19.3853 8.85382L21.3111 6.92505C21.6843 6.5496 21.6843 5.94324 21.3111 5.56779L16.5005 0.751651C16.3175 0.563581 16.0656 0.458056 15.8031 0.460238C14.9367 0.460347 14.5115 1.51566 15.1358 2.11646L18.3108 5.28404H1.34617C0.0117998 5.35024 0.111432 7.27723 1.39599 7.2108Z" fill="white"></path>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://www.reddit.com/r/WPPOOL/" target="_blank" rel="noopener" class="social-btn flex items-center gap-2 group text-orange-600 border border-orange-600 rounded-full px-4 py-3 text-base md:text-xl font-medium whitespace-nowrap transition-all duration-300 hover:bg-orange-600 hover:text-white" aria-label="Join WPPOOL Reddit Community">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <g clip-path="url(#clip0_8002_1687)">
+                                <path class="group-hover:fill-white transition-all" d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" fill="#FF4500"></path>
+                                <path class="group-hover:fill-orange-600 transition-all" d="M20.0039 11.9999C20.0063 11.8355 19.9859 11.6714 19.9427 11.5127C19.8995 11.354 19.8341 11.2019 19.7483 11.0615C19.6628 10.9211 19.5578 10.7933 19.4366 10.682C19.3154 10.5707 19.1792 10.4771 19.0319 10.4039C19.0352 10.3601 19.0379 10.316 19.0394 10.2719C19.043 10.1839 19.043 10.0958 19.0394 10.0079C19.0379 9.96378 19.0352 9.91968 19.0319 9.87588C19.0319 7.18788 15.8999 5.00388 12.0359 5.00388C8.17194 5.00388 5.03994 7.18788 5.03994 9.87588C5.03664 9.91968 5.03394 9.96378 5.03244 10.0079C5.02882 10.0958 5.02882 10.1839 5.03244 10.2719C5.03394 10.316 5.03664 10.3601 5.03994 10.4039C4.80916 10.51 4.60419 10.6649 4.43921 10.858C4.27423 11.0511 4.15318 11.2778 4.08444 11.5223C4.0158 11.7669 4.00118 12.0235 4.04159 12.2743C4.082 12.5252 4.17646 12.7642 4.31844 12.9749C4.46029 13.1855 4.64627 13.3628 4.86349 13.4944C5.0807 13.626 5.32394 13.7087 5.57634 13.7369C5.82876 13.7652 6.08432 13.7382 6.3253 13.6579C6.56628 13.5777 6.78693 13.4459 6.97194 13.2719C7.31539 13.5047 7.67522 13.7123 8.04864 13.8932C8.42214 14.0738 8.80824 14.2274 9.20394 14.3522C9.59964 14.477 10.004 14.5727 10.4135 14.639C10.823 14.7053 11.237 14.7416 11.6519 14.7479L12.5399 18.9119C12.5498 18.9602 12.5693 19.0058 12.5972 19.0466C12.6248 19.0871 12.6605 19.1219 12.7016 19.1486C12.743 19.1753 12.7892 19.1936 12.8378 19.2026C12.8861 19.2113 12.9359 19.2104 12.9839 19.1999L15.9239 18.6119C16.2206 19.1216 16.8434 19.34 17.3933 19.1276C17.9432 18.9152 18.2576 18.3347 18.1346 17.7581C18.0119 17.1815 17.4881 16.7795 16.8995 16.8098C16.3106 16.8401 15.8309 17.2937 15.7679 17.8799L13.1999 18.4199L12.4199 14.6759C12.8297 14.6672 13.2386 14.6288 13.643 14.5613C14.4529 14.4263 15.239 14.1751 15.977 13.8155C16.3457 13.6361 16.7009 13.4304 17.0399 13.1999C17.2837 13.4339 17.5901 13.5924 17.9219 13.6562C18.2538 13.7202 18.5971 13.6867 18.9104 13.5599C19.2238 13.4331 19.4937 13.2184 19.6877 12.9416C19.8818 12.6648 19.9916 12.3377 20.0039 11.9999ZM8.09514 10.3406C8.15574 10.1951 8.24394 10.0628 8.35554 9.95148C8.46684 9.83988 8.59914 9.75168 8.74464 9.69108C8.89027 9.63085 9.04634 9.59987 9.20394 9.59988C9.68934 9.59988 10.1267 9.89238 10.3127 10.3406C10.4984 10.7891 10.3955 11.3051 10.0523 11.6483C9.70914 11.9915 9.19314 12.0944 8.74464 11.9087C8.29644 11.7227 8.00394 11.2853 8.00394 10.7999C8.00394 10.6424 8.03484 10.4864 8.09514 10.3406ZM14.9681 7.45998C15.0296 7.51998 15.0647 7.60188 15.0659 7.68768C15.0671 7.77378 15.0338 7.85658 14.9738 7.91808C14.9138 7.97958 14.8319 8.01468 14.7461 8.01588C14.66 8.01708 14.5772 7.98378 14.5079 7.93188C14.3275 7.80246 14.1364 7.68855 13.9367 7.59138C13.737 7.49417 13.5295 7.41398 13.3163 7.35168C13.1033 7.28958 12.8852 7.24548 12.6647 7.21998C12.4439 7.19448 12.2216 7.18788 11.9999 7.19988C11.7785 7.18998 11.5565 7.19898 11.3366 7.22658C11.1167 7.25391 10.8995 7.30008 10.6874 7.36458C10.475 7.42878 10.2689 7.51098 10.0706 7.60998C9.87234 7.70898 9.68274 7.82478 9.50394 7.95588C9.44184 8.00688 9.36294 8.03298 9.28254 8.02908C9.20214 8.02518 9.12624 7.99128 9.06924 7.93458C9.01254 7.87758 8.97864 7.80168 8.97474 7.72128C8.97084 7.64088 8.99694 7.56198 9.04794 7.49988C9.25884 7.34088 9.48294 7.20048 9.71784 7.07988C9.95274 6.95928 10.1978 6.85938 10.4498 6.78078C10.7018 6.70218 10.9601 6.64548 11.222 6.61098C11.4839 6.57678 11.7482 6.56508 12.0119 6.57588C12.2756 6.56508 12.5399 6.57678 12.8018 6.61098C13.3264 6.67998 13.8352 6.83859 14.306 7.07988C14.5409 7.20048 14.765 7.34088 14.9759 7.49988L14.9681 7.45998ZM14.7479 9.50388C14.9105 9.50208 15.0719 9.53358 15.2222 9.59598C15.3725 9.65868 15.5084 9.75108 15.6218 9.86778C15.7352 9.98448 15.8234 10.1231 15.8816 10.2752C15.9399 10.4271 15.9665 10.5893 15.9599 10.7519C15.9599 11.2373 15.6674 11.6747 15.2192 11.8607C14.7707 12.0464 14.2547 11.9435 13.9115 11.6003C13.5683 11.2571 13.4654 10.7411 13.6511 10.2926C13.8371 9.84438 14.2745 9.55188 14.7599 9.55188L14.7479 9.50388Z" fill="white"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_8002_1687">
+                                    <rect width="24" height="24" fill="white" transform="matrix(1 0 0 -1 0 24)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        Reddit 
+                        <svg class="inline transition-all group-hover:translate-x-1.5" xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 13" fill="none" aria-hidden="true">
+                            <path class="group-hover:fill-white transition-all" d="M1.39599 7.2108H18.3033L15.1358 10.3784C14.2259 11.2882 15.5907 12.6529 16.5005 11.7431L19.3853 8.85382L21.3111 6.92505C21.6843 6.5496 21.6843 5.94324 21.3111 5.56779L16.5005 0.751651C16.3175 0.563581 16.0656 0.458056 15.8031 0.460238C14.9367 0.460347 14.5115 1.51566 15.1358 2.11646L18.3108 5.28404H1.34617C0.0117998 5.35024 0.111432 7.27723 1.39599 7.2108Z" fill="#FF4500"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section - Converted from footer.css to Tailwind CSS -->
+        <footer class="relative z-10 overflow-hidden bg-neutral-800 bg-cover bg-no-repeat py-10 lg:pt-26"
+                style="background-image: url('https://cdn.wppool.dev/assets/img/wppool-image/footer-bg-dark.svg')">
+            <div class="mx-auto max-w-screen-xl px-4 lg:px-8 xl:px-14">
+                <div class="flex flex-wrap">
+                    <div class="w-full sm:w-6/12 lg:w-5/12">
+                        <div class="footer-widget mt-8 lg:mt-10 md:mt-8">
+                            <div class="widget-title pb-4">
+                                <h2 class="text-left text-2xl font-semibold leading-[56px] text-white">Products</h2>
+                            </div>
+                            <div class="footer-products-list">
+                                <ul class="product-list list-none">
+                                    <!-- WP Dark Mode -->
+                                    <li class="product-item">
+                                        <a href="https://wppool.dev/wp-dark-mode"
+                                           class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28"
+                                                 src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/60f4953f-b7c7-41d3-31fc-b9a9caf6f900/public"
+                                                 alt="WP Dark Mode Icon"
+                                                 loading="lazy"
+                                                 class="w-7 h-7 object-contain">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                                <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">WP Dark Mode</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- FlexTable -->
+                                    <li class="product-item">
+                                        <a href="https://wppool.dev/flextable"
+                                           class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28"
+                                                 src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/677e8947-f0cf-4071-1a41-9c17e6777f00/public"
+                                                 alt="FlexTable Icon"
+                                                 loading="lazy"
+                                                 class="w-7 h-7 object-contain">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                                <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">FlexTable</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- FormyChat -->
+                                    <li class="product-item">
+                                        <a href="https://wppool.dev/formychat"
+                                            class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/b85b4e72-0a2b-47df-5063-0a1210fb3c00/public" alt="FormyChat Icon" loading="lazy">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                            <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">FormyChat</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- FlexStock -->
+                                    <li class="product-item">
+                                        <a href="https://wppool.dev/flexstock"
+                                            class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/32206971-7294-4b8d-5412-bff496793a00/public" alt="FlexStock Icon" loading="lazy">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                            <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">FlexStock</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- FlexOrder -->
+                                    <li class="product-item">
+                                        <a href="https://wcordersync.com"
+                                            class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/d3be24b5-a7c0-4f61-15cb-c89767b90d00/public" alt="FlexOrder Icon" loading="lazy">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                            <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">FlexOrder</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- Easy Video Reviews -->
+                                    <li class="product-item">
+                                        <a href="https://wppool.dev/easy-video-reviews"
+                                            class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/227afe74-3f30-4902-8fd1-6cc7cc03c800/public" alt="Easy Video Reviews Icon" loading="lazy">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                            <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">Easy Video Reviews</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- EchoRewards -->
+                                    <li class="product-item">
+                                        <a href="https://echorewards.pro"
+                                            class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/118c89cb-ee2c-4372-9d17-65ca53bcbe00/public" alt="EchoRewards Icon" loading="lazy">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                            <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">EchoRewards</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- Jitsi Meet Video Meeting -->
+                                    <li class="product-item">
+                                        <a href="https://wppool.dev/webinar-and-video-conference-with-jitsi-meet"
+                                            class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/95000efe-6b43-4910-c734-428dc4dd6400/public" alt="Jisi Meet Icon" loading="lazy">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                            <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">Jitsi Meet Video Meeting</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <!-- FlexSync for Shopify -->
+                                    <li class="product-item">
+                                        <a href="https://flexsync.app/"
+                                            class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/4d380a55-a109-4066-ee63-4bfa24cecc00/public" alt="FlexSync for Shopify Icon" loading="lazy">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                            <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">FlexSync for Shopify</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <!-- ArchiveMaster -->
+                                    <li class="product-item">
+                                        <a href="https://archivemaster.pro/"
+                                            class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/9e70fb5b-d4e7-4980-c995-ba98ec5c6900/public" alt="ArchiveMaster Icon" loading="lazy">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                            <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">ArchiveMaster</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <!-- OMG Chat Widget -->
+                                    <li class="product-item">
+                                        <a href="https://wppool.dev/chat-widgets-compatible-with-multivendor-marketplaces"
+                                            class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/c37a7701-f859-4ba2-a232-fb30aa90ab00/public" alt="Chat Widgets Icon" loading="lazy">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                            <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">OMG Chat Widget</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- Stock Notifier for WooCommerce -->
+                                    <li class="product-item markD">
+                                        <a href="https://wppool.dev/stock-notifier-for-woocommerce"
+                                            class="grid grid-cols-[28px_auto] gap-2.5 items-center mb-3 text-black transition-all duration-300 hover:text-[#ee5913] hover:pl-1.5">
+                                            <img width="28" height="28" src="https://imagedelivery.net/ljIyvOIdtJguvpVgdVbbiA/caf3abb9-cac3-476b-15f7-a988edbd4400/public" alt="Stock Notifier Icon" loading="lazy">
+                                            <div class="flex gap-2.5 items-center mb-[15px]">
+                                            <h3 class="text-base mb-0 font-normal text-white/80 hover:text-[#ee5913] transition-colors duration-300">Stock Notifier for WooCommerce</h3>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-6/12 lg:w-3/12">
+                        <div class="footer-widget mt-8 lg:mt-10 md:mt-8">
+                            <div class="widget-title pb-4">
+                                <h2 class="text-left text-2xl font-semibold leading-[56px] text-white">Links</h2>
+                            </div>
+                        </div>
+                        <ul class="menu list-none">
+                            <li>
+                                <a href="https://wppool.dev/"
+                                   aria-current="page"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wppool.dev/blog/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wppool.dev/about-us/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wppool.dev/contact/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Support
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wppool.dev/partners/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Partners
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wppool.dev/affiliates/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Affiliates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wppool.dev/influencer-program/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Influencer Program
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://careers.wppool.dev/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Careers
+                                </a>
+                            </li>
+                            <li>
+                                <a rel="privacy-policy"
+                                   href="https://wppool.dev/privacy-policy/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wppool.dev/terms-of-service/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Terms of Service
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full sm:w-6/12 lg:w-4/12">
+                        <div class="footer-widget mt-8 lg:mt-10 md:mt-8">
+                            <div class="widget-title pb-4">
+                                <h2 class="text-left text-2xl font-semibold leading-[56px] text-white">Socials</h2>
+                            </div>
+                        </div>
+                        <ul id="menu-footer-links" class="menu list-none">
+                            <li>
+                                <a href="https://lnk.wppool.dev/la2gPZG"
+                                   aria-current="page"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Facebook Community
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/wppool.dev/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/wppool_"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    X (Twitter)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://lnk.wppool.dev/muj7wAh"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Telegram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCzMNIb1_6rjPP--6iWrZ7aw"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    YouTube
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/wppool"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wppool.dev/docs/"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wppool.dev/contact"
+                                   class="block mb-2.5 text-base text-white/80 transition-all duration-300 hover:pl-1.5 hover:text-[#ee5913]">
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Footer Bottom -->
+                <hr class="mt-6 border-white/20">
+
+                <div class="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
+                    <div class="w-full sm:w-6/12">
+                        <div class="site-info pt-8">
+                            <a href="https://wppool.dev/" class="mb-6 block">
+                               <img width="201.007" height="34.628" src="https://cdn.wppool.dev/assets/img/wppool-image/logo.svg" alt="Logo">
+                            </a>
+                            <p class="mb-4 text-base leading-relaxed text-white">
+                                Experience remarkable WordPress products with a new level of power, beauty, and human-centered designs.
+                            </p>
+                            <!-- Social Links -->
+                            <div class="social-link mt-6 flex gap-2.5">
+                                <a href="https://www.facebook.com/wppool.dev/"
+                                   class="inline-flex items-center justify-center w-8 h-8 bg-white text-[#246bf1] rounded-full transition-all duration-300 hover:bg-[#246bf1] hover:text-white first:ml-0"
+                                   aria-label="Follow WPPOOL on Facebook"
+                                   rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 896 1664" aria-hidden="true">
+                                        <path fill="currentColor" d="M895 12v264H738q-86 0-116 36t-30 108v189h293l-39 296H592v759H286V905H31V609h255V391q0-186 104-288.5T667 0q147 0 228 12z"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com/wppool_"
+                                   class="inline-flex items-center justify-center w-8 h-8 bg-white text-[#0f1419] rounded-full transition-all duration-300 hover:bg-[#0f1419] hover:text-white"
+                                   aria-label="Follow WPPOOL on Twitter"
+                                   rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13" fill="none" aria-hidden="true">
+                                        <path d="M11.4198 0.38543H13.4898L8.9748 5.54543L14.2848 12.5654H10.1298L6.8748 8.30543L3.1398 12.5654H1.0698L5.8998 7.04543L0.799805 0.38543H5.0748L8.0148 4.27043L11.4198 0.38543ZM10.6998 11.3354H11.8398L4.4448 1.55543H3.2148L10.6998 11.3354Z" fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCzMNIb1_6rjPP--6iWrZ7aw"
+                                   class="inline-flex items-center justify-center w-8 h-8 bg-white text-red-600 rounded-full transition-all duration-300 hover:bg-red-600 hover:text-white"
+                                   aria-label="Subscribe to WPPOOL on YouTube"
+                                   rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/company/wppool"
+                                   class="inline-flex items-center justify-center w-8 h-8 bg-white text-[#1a5abb] rounded-full transition-all duration-300 hover:bg-[#1a5abb] hover:text-white"
+                                   aria-label="Connect with WPPOOL on LinkedIn"
+                                   rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 432 432" aria-hidden="true">
+                                        <path fill="currentColor" d="M319 221.5q-8-10.5-30-10.5q-27 0-38 16t-11 45v146q0 5-3 8t-8 3h-76q-4 0-7.5-3t-3.5-8V148q0-4 3.5-7.5t7.5-3.5h74q4 0 6.5 2t3.5 6v5q1 2 1 7q28-27 76-27q53 0 83 27t30 79v182q0 5-3.5 8t-7.5 3h-78q-4 0-7.5-3t-3.5-8V254q0-22-8-32.5zM88 91.5Q73 107 51.5 107T15 91.5t-15-37T15 18T51.5 3T88 18t15 36.5t-15 37zm13 56.5v270q0 5-3.5 8t-7.5 3H14q-5 0-8-3t-3-8V148q0-4 3-7.5t8-3.5h76q4 0 7.5 3.5t3.5 7.5z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full sm:w-4/12 flex flex-col sm:items-end sm:text-right">
+                        <div class="changelog text-gray-400 text-sm mt-4">
+                            WP Dark Mode <a target="_blank" href="https://headwayapp.co/wp-dark-mode-updates" class="text-orange-500">Changelog</a> | <a class="text-orange-500" href="https://wppool.dev/wp-dark-mode-pricing/#faq">FAQ</a>
+                        </div>
+
+                        <div class="copyright-info mt-4 text-gray-400 text-sm">
+                            © 2025 WPPOOL. All Rights Reserved.
+                        </div>
+
+                        <div class="wpbeginner-badge mt-4 w-64">
+                            <a target="_blank" href="https://www.wpbeginner.com/solutions/wp-dark-mode/">
+                                <img width="480" height="86" src="https://cdn.wppool.dev/assets/img/dark-mode-images/wpbeginner-badge-light.svg" alt="WPBeginner Badge" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            (function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))o(s);new MutationObserver(s=>{for(const l of s)if(l.type==="childList")for(const n of l.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function i(s){const l={};return s.integrity&&(l.integrity=s.integrity),s.referrerPolicy&&(l.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?l.credentials="include":s.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function o(s){if(s.ep)return;s.ep=!0;const l=i(s);fetch(s.href,l)}})();let a=0;window.addEventListener("scroll",function(){let t=window.pageYOffset||document.documentElement.scrollTop,e=document.querySelector(".header-menu");t>36?e.classList.add("sticky"):e.classList.remove("sticky"),t>a?e.style.transform="translateY(-100%)":e.style.transform="translateY(0)",a=t<=0?0:t});document.addEventListener("DOMContentLoaded",function(){const t=document.querySelector(".dark-btn"),e=document.querySelector(".light-btn"),i=document.querySelector(".dark-demo"),o=document.querySelector(".light-demo");t&&e&&i&&o&&(t.addEventListener("click",function(){t.querySelector("img").style.border="1px solid #B8D7F9",e.querySelector("img").style.border="",t.classList.add("active"),e.classList.remove("active"),i.classList.remove("hidden"),i.classList.add("block"),o.classList.remove("block"),o.classList.add("hidden")}),e.addEventListener("click",function(){e.querySelector("img").style.border="1px solid #B8D7F9",t.querySelector("img").style.border="",e.classList.add("active"),t.classList.remove("active"),o.classList.remove("hidden"),o.classList.add("block"),i.classList.remove("block"),i.classList.add("hidden")}),setInterval(function(){t.classList.contains("active")?(e.querySelector("img").style.border="1px solid #B8D7F9",t.querySelector("img").style.border="",e.classList.add("active"),t.classList.remove("active"),o.classList.remove("hidden"),o.classList.add("block"),i.classList.remove("block"),i.classList.add("hidden")):(t.querySelector("img").style.border="1px solid #B8D7F9",e.querySelector("img").style.border="",t.classList.add("active"),e.classList.remove("active"),i.classList.remove("hidden"),i.classList.add("block"),o.classList.remove("block"),o.classList.add("hidden"))},3e3))});class d{constructor(){this.isOpen=!1,this.popup=null,this.popupbg=null,this.content=null,this.video=null,this.closeBtn=null,this.videoIdRegex=/(?:v=|\/embed\/|\/watch\?v=|youtu\.be\/)([^&\n?#]+)/,this.initializePopup(),this.bindEvents()}initializePopup(){this.popup=document.createElement("div"),this.popup.className="fixed inset-0 bg-neutral-950/80 flex items-center justify-center p-4 z-50 transition-all duration-150 ease-out opacity-0 pointer-events-none",this.popup.innerHTML=`
+            <div class="content relative bg-black rounded-lg w-full max-w-4xl transition-all duration-150 ease-out opacity-0 transform scale-95">
+                <button class="close-btn absolute -top-2 -right-2 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center hover:bg-gray-200 z-10">×</button>
+                <div class="relative w-full bg-black rounded-lg overflow-hidden" style="padding-bottom: 56.25%;">
+                    <iframe title="youtube" class="video absolute inset-0 w-full h-full" allowfullscreen></iframe>
+                </div>
+            </div>
+        `,this.content=this.popup.querySelector(".content"),this.video=this.popup.querySelector(".video"),this.closeBtn=this.popup.querySelector(".close-btn"),document.body.appendChild(this.popup),this.closeBtn.addEventListener("click",()=>this.close()),this.popup.addEventListener("click",e=>{e.target===this.popup&&this.close()})}bindEvents(){document.addEventListener("click",e=>{var i;if(!this.isOpen&&e.target.closest(".popup-youtube")){e.preventDefault();const o=e.target.closest(".popup-youtube"),s=(i=this.videoIdRegex.exec(o.href))==null?void 0:i[1];s&&this.open(s)}}),document.addEventListener("keydown",e=>{e.key==="Escape"&&this.isOpen&&this.close()})}open(e){this.isOpen||(this.isOpen=!0,requestAnimationFrame(()=>{this.video.src=`https://www.youtube.com/embed/${e}?autoplay=1&rel=0`,this.popup.style.pointerEvents="auto",document.body.style.overflow="hidden",requestAnimationFrame(()=>{this.popup.style.opacity="1",this.popup.style.zIndex="99999",this.content.style.opacity="1",this.content.style.transform="scale(1)"})}))}close(){this.isOpen&&(this.isOpen=!1,this.popup.style.opacity="0",this.content.style.opacity="0",this.content.style.transform="scale(0.95)",setTimeout(()=>{this.popup.style.pointerEvents="none",this.video.src="",document.body.style.overflow=""},150))}}new d;function u(){const t=document.querySelector(".mode-btn"),e=document.querySelector(".social-share-block");if(!t||!e)return;const i=t.querySelector(".light"),o=t.querySelector(".dark"),s=["[&_.single-option]:bg-white","[&_.single-option_.light-img]:block","[&_.single-option_.dark-img]:hidden","[&_.single-option_h2]:text-neutral-800"],l=["[&_.single-option]:bg-neutral-800","[&_.single-option_.dark-img]:block","[&_.single-option_.light-img]:hidden","[&_.single-option_h2]:text-white"];function n(r){requestAnimationFrame(()=>{r?(e.classList.remove(...l),e.classList.add(...s),i.classList.add("active"),o.classList.remove("active")):(e.classList.remove(...s),e.classList.add(...l),o.classList.add("active"),i.classList.remove("active"))})}t.addEventListener("click",r=>{const c=r.target.closest(".light, .dark");c&&n(c.classList.contains("light"))})}u();
+
+        </script>
+    </body>
+</html>

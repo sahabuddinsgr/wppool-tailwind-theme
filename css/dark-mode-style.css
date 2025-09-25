@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../../assets/fonts/SFProDisplay-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer base {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family:
+            'SF Pro Display', system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+            sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    }
+
+    html,
+    :host {
+        font-family:
+            system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+            'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+.header-menu::after {
+    transition: all 500ms ease !important;
+    -webkit-backdrop-filter: saturate(178%) blur(20px);
+    backdrop-filter: saturate(178%) blur(20px);
+}
+.header-menu.sticky::after {
+    opacity: 1;
+}
+
+.main_menu ul li:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) !important;
+}
+
+.btn-theme-tab.active {
+    color: #08cf68;
+    border-color: #08cf68;
+    background: linear-gradient(
+        290deg,
+        rgba(8, 207, 104, 0.2) 18.17%,
+        rgba(226, 255, 188, 0.2) 100%
+    );
+}
+.btn-theme-tab.active::before {
+    border-color: #08cf68;
+}

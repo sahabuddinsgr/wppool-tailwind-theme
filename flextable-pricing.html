@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FlexTable Pricing Plans</title>
+
+        <link rel="preconnect" href="https://cdn.wppool.dev" />
+        <link rel="preconnect" href="https://wppool.dev" />
+        <link rel="dns-prefetch" href="https://wppool-fluentcrm-che-uni9gg.flywp.xyz" />
+
+        <link rel="preload" href="./assets/fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin />
+
+        <link rel="prefetch" href="https://wppool-fluentcrm-che-uni9gg.flywp.xyz" />
+
+        <link href="./css/flextable-picing.css" rel="stylesheet" />
+
+        <style>
+            /* Custom CSS to make the checkmarks work */
+            .radio-option svg {
+              visibility: hidden;
+            }
+
+            .radio-option input:checked~div+svg {
+              visibility: visible;
+            }
+
+            .radio-option input:checked {
+              background-color: #14b8a61a;
+            }
+
+            .radio-option:has(input:checked) {
+              background-color: #14b8a61a;
+              outline: 2px solid #14b8a6;
+              outline-offset: -2px;
+            }
+
+            /* Fallback for browsers that don't support :has() */
+            @supports not (selector(:has(*))) {
+              .radio-option.checked {
+                background-color: #14b8a61a;
+                outline: 2px solid #14b8a6;
+                outline-offset: -2px;
+              }
+            }
+        </style>
+    </head>
+
+    <body class="bg-gray-900">
+        <!-- Skip Links -->
+        <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-teal-500 focus:text-white focus:px-4 focus:py-2 focus:rounded focus:font-semibold focus:no-underline">Skip to main content</a>
+        <a href="#faq-heading" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-36 focus:z-50 focus:bg-teal-500 focus:text-white focus:px-4 focus:py-2 focus:rounded focus:font-semibold focus:no-underline">Skip to FAQ</a>
+
+        <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out" role="banner">
+            <div id="header-inner" class="container max-w-6xl mx-auto px-4">
+                <div class="home-links align-items-center flex items-center justify-center gap-4 py-4">
+                    <a class="nav-link home-logo" href="https://wppool.dev">
+                        <img class="w-auto h-8" src="https://cdn.wppool.dev/assets/img/wppool-image/icon.svg" alt="WPPOOL" />
+                    </a>
+                    <a href="https://wppool.dev/flextable/" class="navbar-brand" rel="home" aria-current="page">
+                        <img src="https://wppool.dev/wp-content/uploads/2025/01/FlexTable-1.svg" class="custom-logo w-auto h-10" alt="FlexTable" />
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content" role="main">
+            <div class="max-w-6xl mx-auto px-4 pt-24 max-sm:pt-8">
+                <section class="relative isolate bg-gray-900 px-8 py-20 max-sm:px-2" aria-labelledby="pricing-heading">
+                    <div aria-hidden="true" class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl">
+                        <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#0891b2] to-[#9089fc] opacity-30"></div>
+                    </div>
+                    <div class="mx-auto max-w-4xl text-center">
+                        <p class="text-base/7 font-semibold text-teal-500">Pricing</p>
+                        <h1 id="pricing-heading" class="mt-2 text-6xl max-sm:text-5xl font-semibold tracking-tight text-balance text-white">Choose the right plan for you</h1>
+                    </div>
+                    <p class="mx-auto mt-6 max-w-2xl text-center text-xl/8 max-sm:text-lg font-medium text-pretty text-gray-400">Choose an affordable plan that's packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
+                    <fieldset class="mt-14">
+                        <legend class="sr-only">Select number of sites for your plan</legend>
+                        <div class="grid grid-cols-4 gap-3 max-sm:gap-2 max-w-2xl mx-auto">
+                            <label class="radio-option group relative flex rounded-lg border border-white/10 bg-gray-800/50 p-3 max-sm:p-2 cursor-pointer">
+                                <input type="radio" id="sites-1" name="global-sites" value="1" checked class="absolute inset-0 appearance-none cursor-pointer focus:outline-none" aria-describedby="sites-1-desc" />
+                                <div class="pointer-events-none">
+                                    <span class="block text-sm max-sm:text-xs font-medium text-white">Personal</span>
+                                    <span id="sites-1-desc" class="mt-1 block text-sm font-medium text-white">01 Site</span>
+                                </div>
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="size-5 max-sm:size-3 text-teal-500 absolute right-3 max-sm:right-1" aria-hidden="true">
+                                    <path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                </svg>
+                            </label>
+                            <label class="radio-option group relative flex rounded-lg border border-white/10 bg-gray-800/50 p-3 max-sm:p-2 cursor-pointer">
+                                <input type="radio" id="sites-5" name="global-sites" value="5" class="absolute inset-0 appearance-none cursor-pointer focus:outline-none" aria-describedby="sites-5-desc" />
+                                <div class="pointer-events-none">
+                                    <span class="block text-sm max-sm:text-xs font-medium text-white">Business</span>
+                                    <span id="sites-5-desc" class="mt-1 block text-sm font-medium text-white">05 Sites</span>
+                                </div>
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="size-5 max-sm:size-3 text-teal-500 absolute right-3 max-sm:right-1" aria-hidden="true">
+                                    <path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                </svg>
+                            </label>
+                            <label class="radio-option group relative flex rounded-lg border border-white/10 bg-gray-800/50 p-3 max-sm:p-2 cursor-pointer">
+                                <input type="radio" id="sites-25" name="global-sites" value="25" class="absolute inset-0 appearance-none cursor-pointer focus:outline-none" aria-describedby="sites-25-desc" />
+                                <div class="pointer-events-none">
+                                    <span class="block text-sm max-sm:text-xs font-medium text-white">Agency</span>
+                                    <span id="sites-25-desc" class="mt-1 block text-sm font-medium text-white">25 Sites</span>
+                                </div>
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="size-5 max-sm:size-3 text-teal-500 absolute right-3 max-sm:right-1" aria-hidden="true">
+                                    <path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                </svg>
+                            </label>
+                            <label class="radio-option group relative flex rounded-lg border border-white/10 bg-gray-800/50 p-3 max-sm:p-2 cursor-pointer">
+                                <input type="radio" id="sites-50" name="global-sites" value="50" class="absolute inset-0 appearance-none cursor-pointer focus:outline-none" aria-describedby="sites-50-desc" />
+                                <div class="pointer-events-none">
+                                    <span class="block text-sm max-sm:text-xs font-medium text-white">Enterprise</span>
+                                    <span id="sites-50-desc" class="mt-1 block text-sm font-medium text-white">50 Sites</span>
+                                </div>
+                                <svg viewBox="0 0 20 20" fill="currentColor" class="size-5 max-sm:size-3 text-teal-500 absolute right-3 max-sm:right-1" aria-hidden="true">
+                                    <path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                </svg>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="mx-auto mt-10 grid max-w-4xl max-lg:max-w-lg grid-cols-2 max-lg:grid-cols-1 items-center gap-y-0 max-lg:gap-y-6">
+                        <div class="relative rounded-3xl bg-gray-800 p-10 max-sm:p-8 ring-1 ring-white/10">
+                            <h2 id="tier-personal" class="text-base/7 font-semibold text-teal-500">Annual</h2>
+                            <p class="mt-4 flex items-baseline gap-x-2">
+                                <span class="text-5xl font-semibold tracking-tight text-white">$89</span>
+                                <span class="text-base text-gray-400">/year</span>
+                            </p>
+                            <p class="mt-6 text-base/7 text-gray-300">The perfect plan if you're just getting started with our product.</p>
+                            <ul role="list" class="mt-10 max-sm:mt-8 space-y-3 text-sm/6 text-gray-300">
+                                <li class="flex gap-x-3">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-6 w-5 flex-none text-teal-500">
+                                        <path d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                    </svg>
+                                    25 products
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-6 w-5 flex-none text-teal-500">
+                                        <path d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                    </svg>
+                                    Up to 10,000 subscribers
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-6 w-5 flex-none text-teal-500">
+                                        <path d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                    </svg>
+                                    Audience segmentation
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-6 w-5 flex-none text-teal-500">
+                                        <path d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                    </svg>
+                                    Advanced analytics
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-6 w-5 flex-none text-teal-500">
+                                        <path d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                    </svg>
+                                    Email support
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-6 w-5 flex-none text-teal-500">
+                                        <path d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                    </svg>
+                                    Marketing automations
+                                </li>
+                            </ul>
+                            <a href="https://wppool-fluentcrm-che-uni9gg.flywp.xyz/?fluent-cart=instant_checkout&item_id=11&quantity=1" aria-describedby="tier-personal" class="mt-10 max-sm:mt-8 block rounded-md bg-teal-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500">Get started today</a>
+                        </div>
+                        <div class="rounded-3xl bg-gray-800/50 p-10 max-sm:p-8 ring-1 ring-white/10 rounded-t-none max-lg:rounded-t-3xl rounded-tr-3xl max-lg:rounded-tr-3xl rounded-bl-none max-lg:rounded-bl-3xl">
+                            <h2 id="tier-team" class="text-base/7 font-semibold text-teal-500">Lifetime</h2>
+                            <p class="mt-4 flex items-baseline gap-x-2">
+                                <span class="text-5xl font-semibold tracking-tight text-white">$249</span>
+                                <span class="text-base text-gray-400">/one-time</span>
+                            </p>
+                            <p class="mt-6 text-base/7 text-gray-300">A plan that scales with your rapidly growing business.</p>
+                            <ul role="list" class="mt-10 max-sm:mt-8 space-y-3 text-sm/6 text-gray-300">
+                                <li class="flex gap-x-3">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-6 w-5 flex-none text-teal-500">
+                                        <path d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                    </svg>
+                                    Priority support
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-6 w-5 flex-none text-teal-500">
+                                        <path d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                    </svg>
+                                    Single sign-on
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-6 w-5 flex-none text-teal-500">
+                                        <path d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                    </svg>
+                                    Enterprise integrations
+                                </li>
+                                <li class="flex gap-x-3">
+                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="h-6 w-5 flex-none text-teal-500">
+                                        <path d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                    </svg>
+                                    Custom reporting tools
+                                </li>
+                            </ul>
+                            <a href="https://wppool-fluentcrm-che-uni9gg.flywp.xyz/?fluent-cart=instant_checkout&item_id=40&quantity=1" aria-describedby="tier-team" class="mt-10 max-sm:mt-8 block rounded-md bg-white/10 px-3.5 py-2.5 text-center text-sm font-semibold text-white ring-1 ring-inset ring-white/20 hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/75">Get started today</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Statistics Section -->
+                <section class="bg-gray-900 py-16" aria-labelledby="stats-heading">
+                    <div class="mx-auto max-w-6xl px-6 max-sm:px-2">
+                        <div class="mx-auto max-w-2xl lg:max-w-none">
+                            <div class="text-center">
+                                <h2 id="stats-heading" class="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">Trusted by creators worldwide</h2>
+                                <p class="mt-4 text-lg/8 text-gray-300">Lorem ipsum dolor sit amet consect adipisicing possimus.</p>
+                            </div>
+                            <dl class="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+                                <div class="flex flex-col bg-white/5 p-8">
+                                    <dt class="text-sm/6 font-semibold text-gray-300">Creators on the platform</dt>
+                                    <dd class="order-first text-3xl font-semibold tracking-tight text-white">8,000+</dd>
+                                </div>
+                                <div class="flex flex-col bg-white/5 p-8">
+                                    <dt class="text-sm/6 font-semibold text-gray-300">Flat platform fee</dt>
+                                    <dd class="order-first text-3xl font-semibold tracking-tight text-white">3%</dd>
+                                </div>
+                                <div class="flex flex-col bg-white/5 p-8">
+                                    <dt class="text-sm/6 font-semibold text-gray-300">Uptime guarantee</dt>
+                                    <dd class="order-first text-3xl font-semibold tracking-tight text-white">99.9%</dd>
+                                </div>
+                                <div class="flex flex-col bg-white/5 p-8">
+                                    <dt class="text-sm/6 font-semibold text-gray-300">Paid out to creators</dt>
+                                    <dd class="order-first text-3xl font-semibold tracking-tight text-white">$70M</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Free Features Section -->
+                <section class="mt-20 px-2 lg:mt-28 py-12 lg:py-16 bg-gray-900" aria-labelledby="features-heading">
+                    <div class="relative">
+                        <h2 id="features-heading" class="text-white text-3xl lg:text-4xl font-bold text-center mb-10 lg:mb-12">All free features</h2>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5 list-none max-w-lg mx-auto mb-10 lg:mb-12">
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Live Data Synchronization</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Fetch up to 100-row data</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Show X Entries</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Swap Bottom Elements</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Search Bar</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Asynchronous Loading</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Limited Free Support</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Shortcode Support</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Show Info block</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Swap Filters</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Allow Sorting</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Pagination Support</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Gutenberg Block</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-white">
+                                <div class="flex-shrink-0 w-4 h-4 bg-gray-300 rounded flex items-center justify-center mt-0.5">
+                                    <svg class="w-3 h-3 text-gray-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Lifetime Update</span>
+                            </li>
+                        </ul>
+
+                        <div class="bg-gray-800 rounded-lg p-6 lg:p-8 max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-6 sm:gap-8 items-center">
+                            <div class="flex flex-col lg:items-start md:items-start items-center gap-2">
+                                <span class="text-white">Want to use</span>
+                                <img width="214" height="56" class="lg:h-20 md:h-14 h-12 w-auto" src="https://cdn.wppool.dev/assets/img/wppool-image/products-icon/flextable-logo-light.svg" alt="FlexTable Logo" />
+                            </div>
+                            <a class="bg-teal-500 hover:bg-teal-500 text-white font-medium px-6 py-3 rounded-full text-center transition-colors duration-200" target="_blank" href="https://go.wppool.dev/b3W/">Live demo</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section class="max-w-4xl mx-auto mt-16 lg:mt-20 px-8 max-sm:px-2" role="region" aria-labelledby="faq-heading">
+                    <div class="text-center mb-12 lg:mb-16">
+                        <h2 id="faq-heading" class="text-white text-3xl lg:text-4xl font-bold">Frequently Asked Questions</h2>
+                        <p class="mt-4 text-gray-400 text-lg lg:text-xl max-w-2xl mx-auto">Everything you need to know about FlexTable. Can't find the answer you're looking for? Feel free to contact our support team.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- FAQ Item 1 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-1" aria-expanded="false" aria-controls="faq-1" id="faq-1-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">How does this plugin work?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-1" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-1-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300"><a href="https://www.youtube.com/watch?v=ucXSvuy5khQ?rel=0&autoplay=1" class="text-teal-500 hover:text-teal-500 underline">Watch how to get started with FlexTable.</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-2" aria-expanded="false" aria-controls="faq-2" id="faq-2-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">Does this plugin support the popular page builders?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-2" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-2-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">The plugin supports the most popular page builders - Elementor widget and Gutenberg block.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-3" aria-expanded="false" aria-controls="faq-3" id="faq-3-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">Do the FlexTable plugin impact page loading?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-3" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-3-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">No. FlexTable is a very robust and fast plugin. It won't impact your page loading. But sometimes, it may take some time to load the page if the "Asynchronous Loading" feature is not enabled & the Google Sheet data is too large.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-4" aria-expanded="false" aria-controls="faq-4" id="faq-4-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">Where can I find the tutorials about using the plugin?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-4" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-4-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">
+                                        Please visit our
+                                        <a href="https://www.youtube.com/playlist?list=PLd6WEu38CQSyY-1rzShSfsHn4ZVmiGNLP" target="_blank" rel="noopener noreferrer" class="text-teal-500 hover:text-teal-500 underline">Youtube playlist</a>
+                                        , where we post tutorials on how you can use different features of the plugin.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-5" aria-expanded="false" aria-controls="faq-5" id="faq-5-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">Is this plugin compatible with all modern browsers?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-5" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-5-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">Yes, We have tested this plugin in all modern browsers (Safari, Chrome, Firefox, Edge, etc.), and it works without any issue.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 6 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-6" aria-expanded="false" aria-controls="faq-6" id="faq-6-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">Do I need to know any programming language for using this plugin?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-6" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-6-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">No. You can easily use the plugin. No coding is required.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 7 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-7" aria-expanded="false" aria-controls="faq-7" id="faq-7-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">I want a refund for my purchase of the plugin. What is the procedure?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-7" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-7-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">
+                                        We have a 14 days refund policy. Please email us at
+                                        <a href="mailto:support@wppool.dev" class="text-teal-500 hover:text-teal-500 underline">support@wppool.dev</a>
+                                        explaining why you would like to get a refund.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 8 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-8" aria-expanded="false" aria-controls="faq-8" id="faq-8-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">Whom do I contact for any kind of support?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-8" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-8-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">
+                                        Please contact us through
+                                        <a href="https://wppool.dev/contact/" target="_blank" rel="noopener noreferrer" class="text-teal-500 hover:text-teal-500 underline">support.</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 9 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-9" aria-expanded="false" aria-controls="faq-9" id="faq-9-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">If a Google Sheet has multiple tabs, how can I select the one I want to display?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-9" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-9-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">Please visit the following page on the Sheets to table plugin. General Settings > Multiple Tabs settings. Now simply copy the browser URL of the tabs you want to fetch on your website.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 10 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-10" aria-expanded="false" aria-controls="faq-10" id="faq-10-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">My sheet designs aren't imported. How to fix those?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-10" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-10-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">
+                                        The color import feature is not developed yet, but the Custom CSS of Sheets to table plugin can fix it for now.
+                                        <a href="https://www.youtube.com/watch?v=hvmE9co4HGU?rel=0&autoplay=1" class="text-teal-500 hover:text-teal-500 underline">Learn how to use custom CSS in Sheets to WP Table Live.</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 11 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-11" aria-expanded="false" aria-controls="faq-11" id="faq-11-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">Can I edit the WP table?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-11" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-11-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">You cannot edit tables in WordPress. Google Sheets to WP Table Live plugin works in a one-way flow that means you can edit data in Google sheet only.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 12 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-12" aria-expanded="false" aria-controls="faq-12" id="faq-12-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">Is it possible to fetch a column with External Link as per the URL?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-12" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-12-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">If any external link has been added with the link, it will automatically fetch the link as you have on your Google sheets. So, on your website, when you click it, it will go to the same link as Google sheets have.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 13 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-13" aria-expanded="false" aria-controls="faq-13" id="faq-13-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">Can I search inside data of tables using WordPress main search?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-13" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-13-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">You can search different table items/data from each table with its search options, but you will not be able to search through the default search bar of WordPress.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 14 -->
+                        <div class="bg-gray-800 rounded-lg border border-gray-700">
+                            <button class="faq-toggle w-full flex justify-between items-center px-6 py-4 lg:px-8 lg:py-4 text-left" data-target="faq-14" aria-expanded="false" aria-controls="faq-14" id="faq-14-button">
+                                <span class="text-white text-lg lg:text-xl font-medium pr-8">Will this work on WordPress Multisite?</span>
+                                <div class="flex-shrink-0">
+                                    <svg class="faq-icon w-6 h-6 text-teal-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div id="faq-14" class="faq-content overflow-hidden transition-all duration-300 ease-in-out max-h-0" style="max-height: 0;" role="region" aria-labelledby="faq-14-button" aria-hidden="true">
+                                <div class="px-6 lg:px-8 pb-6 lg:pb-8">
+                                    <p class="text-gray-300">Yes, FlexTable supports WordPress Multisite. You can operate the plugin on all websites in the Multisite network with a single installation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Spacer after FAQ -->
+                <div class="py-12 lg:py-16"></div>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800" role="contentinfo">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 lg:gap-0">
+                    <!-- Logo Section -->
+                    <div class="lg:w-1/2 text-center md:text-left">
+                        <a href="https://wppool.dev/" class="inline-block lg:pb-0 pb-4">
+                            <img width="201" height="35" src="https://cdn.wppool.dev/assets/img/wppool-image/logo.svg" alt="WPPOOL Logo" class="w-auto h-8 lg:h-9" />
+                        </a>
+                    </div>
+
+                    <!-- Links and Copyright Section -->
+                    <div class="lg:w-5/12 text-center lg:text-right">
+                        <div class="text-gray-300 mb-4">
+                            FlexTable
+                            <a target="_blank" href="https://headwayapp.co/flextable-changelog" class="text-teal-500 hover:text-teal-500 underline ml-1">Changelog</a>
+                            .
+                            <a href="https://wppool.dev/flextable-pricing/#faq" class="text-teal-500 hover:text-teal-500 underline ml-1">FAQ</a>
+                        </div>
+
+                        <div class="text-gray-400 text-sm">© 2025 WPPOOL . All Right Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // ===== FlexTable (flextable-pricing.html) =====
+            document.addEventListener('DOMContentLoaded', () => {
+                // FAQ Accordion
+                document.querySelectorAll('.faq-toggle').forEach(toggle => {
+                    toggle.onclick = () => {
+                        const content = document.getElementById(toggle.dataset.target);
+                        const icon = toggle.querySelector('.faq-icon');
+                        const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+                        content.style.maxHeight = isOpen
+                            ? '0px'
+                            : content.querySelector('div').scrollHeight + 'px';
+                        icon.style.transform = `rotate(${isOpen ? 0 : 45}deg)`;
+                        toggle.setAttribute('aria-expanded', !isOpen);
+                        content.setAttribute('aria-hidden', isOpen);
+                    };
+                });
+
+                // Pricing Toggle
+                const urls = {
+                    yearly: { 1: 11, 5: 17, 25: 18, 50: 19 },
+                    lifetime: { 1: 40, 5: 41, 25: 42, 50: 43 },
+                };
+                const pricing = {
+                    annual: { 1: 89, 5: 149, 25: 299, 50: 449 },
+                    ltd: { 1: 249, 5: 359, 25: 659, 50: 899 },
+                };
+                const base =
+                    'https://wppool-fluentcrm-che-uni9gg.flywp.xyz/?fluent-cart=instant_checkout&item_id=';
+
+                document.querySelectorAll('input[name="global-sites"]').forEach(radio => {
+                    radio.onchange = function () {
+                        if (!this.checked) return;
+                        const sites = +this.value;
+
+                        document.querySelectorAll('.rounded-3xl').forEach(card => {
+                            const isAnnual = card.querySelector('h2').textContent.trim() === 'Annual';
+                            const planType = isAnnual ? 'annual' : 'ltd';
+                            const urlType = isAnnual ? 'yearly' : 'lifetime';
+
+                            const price = card.querySelector('.text-5xl');
+                            const link = card.querySelector('a[aria-describedby]');
+                            if (price) price.textContent = '$' + pricing[planType][sites];
+                            if (link) link.href = base + urls[urlType][sites] + '&quantity=1';
+                        });
+
+                        document.querySelectorAll('.radio-option').forEach(label => {
+                            const checked = label.querySelector('input').checked;
+                            label.className = label.className.replace(
+                                checked ? /border-white\/10/g : /border-teal-500\/50/g,
+                                checked ? 'border-teal-500/50' : 'border-white/10'
+                            );
+                        });
+                    };
+                });
+
+                // Header Scroll
+                const header = document.getElementById('header');
+                const links = document.getElementById('header-inner')?.querySelector('.home-links');
+                if (header && links) {
+                    let lastY = 0;
+                    window.onscroll = () => {
+                        const y = window.pageYOffset;
+                        const down = y > 150;
+                        header.classList.toggle('-translate-y-full', y > lastY && y > 100);
+                        ['bg-gray-900', 'shadow-md', 'border-b', 'border-gray-700'].forEach(c =>
+                            header.classList.toggle(c, down)
+                        );
+                        links.className = links.className.replace(/py-[24]/, down ? 'py-2' : 'py-4');
+                        lastY = y;
+                    };
+                }
+            });
+        </script>
+    </body>
+</html>
